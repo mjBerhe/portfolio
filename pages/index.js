@@ -1,65 +1,68 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import { useState, useEffect, useRef } from 'react';
+import Head from 'next/head';
 
-export default function Home() {
-  return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+import FOG from 'vanta/dist/vanta.fog.min';
+import ReactFullpage from '@fullpage/react-fullpage';
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+import Header from '../components/header';
+import Main from '../components/main';
+import Skills from '../components/skills';
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
+export default function Homepage() {
 
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+   const [vantaEffect, setVantaEffect] = useState(0);
+   const myRef = useRef(null);
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
+   useEffect(() => {
+      if (!vantaEffect) {
+         setVantaEffect(FOG({
+            el: myRef.current,
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            highlightColor: 0x0,
+            midtoneColor: 0x0,
+            lowlightColor: 0xaef7,
+            baseColor: 0x0,
+            speed: 1.0, 
+            blurFactor: 0.5,
+         }));
+      }
+      return () => {
+         if (vantaEffect) vantaEffect.destroy();
+      }
+   }, [vantaEffect]);
 
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
+   return (
+      <div className='container'>
+         <Head>
+            <title>Matthew Berhe</title>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+         </Head>
 
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
+         <ReactFullpage
+            scrollOverflow={true}
+            scrollOverflowOptions={true}
+            render={() => (
+               <ReactFullpage.Wrapper>
+                  <div className='homepage-container' ref={myRef}>
+                     <Header/> 
+                     <Main/>
+                     <Skills/>
+                  </div>
+               </ReactFullpage.Wrapper>
+            )}
+         />
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
-  )
+         <div>
+            <h2>Test</h2>
+         </div>
+
+         <div className='footer'>
+            {/* <h1>This is the footer</h1> */}
+         </div>
+      </div>
+  );
 }

@@ -1,0 +1,88 @@
+// =====================================
+//
+//             SKILLS
+//
+// =====================================
+
+$min-width: 20rem;
+$max-width: 60rem;
+
+.section-3 {
+   grid-row: 3/4;
+   grid-column: 2/3;
+   height: 100vh; 
+}
+
+.skills-container {
+   height: 100%;
+   
+   display: grid;
+   grid-template-rows: 15% minmax(auto, 50%) auto;
+   grid-template-columns: minmax($min-width, $max-width);
+
+   border: 1px solid white;
+}
+
+.skills-title {
+   grid-row: 1/2;
+   grid-column: 1/2;
+
+   // border: 1px solid white;
+}
+
+.technolgies-container {
+   grid-row: 2/3;
+   grid-column: 1/2;
+   width: 100%;
+
+   display: grid;
+   grid-template-rows: 5rem auto;
+   grid-template-columns: 1fr 1fr 1fr;
+
+   border: 1px solid green;
+}
+
+.technologies-headings {
+   grid-row: 1/2;
+   grid-column: 1/4;
+
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+
+   // border: 1px solid white;
+   button {
+      width: 7rem;
+      height: 3rem;
+      font-size: 1.2rem;
+
+      background: transparent;
+      color: white;
+      border: none;
+   }
+}
+
+.technology-items {
+   grid-row: 2/3;
+   grid-column: 1/4;
+
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.technology-item {
+   width: 7.5rem;
+   height: 10rem;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+
+   border: 1px solid white;
+   img {
+      height: 4rem;
+      // width: 4rem;
+      // border: 1px solid pink;
+   }
+}
