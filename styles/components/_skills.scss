@@ -9,12 +9,15 @@ $max-width: 60rem;
 
 .section-3 {
    grid-row: 3/4;
-   grid-column: 2/3;
-   height: 100vh; 
+   grid-column: 1/2;
+
+   border: 2px solid white;
 }
 
 .skills-container {
    height: 100%;
+   max-width: $max-width;
+   margin: 0 auto;
    
    display: grid;
    grid-template-rows: 15% minmax(auto, 50%) auto;
