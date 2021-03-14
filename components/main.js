@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function Main() {
 
    return (
@@ -9,8 +11,10 @@ export default function Main() {
 
             <section className='project-container project1-container'>
                <div className='project-info-container project1-info-container'>
-                  <div className='project1-title'>
-                     <h3>DPS Calculator</h3>
+                  <div className='project-title project1-title'>
+                     <Link href='/dpsCalculator'>
+                        <a><h3>DPS Calculator</h3></a>
+                     </Link>
                   </div>
                   <div className='project1-subtitle'>
                      <h5>for Oldschool Runescape</h5>
@@ -34,7 +38,7 @@ export default function Main() {
 
             <section className='project-container project2-container'>
                <div className='project-info-container project2-info-container'>
-                  <div className='project2-title'>
+                  <div className='project-title project2-title'>
                      <h3>2Slow</h3>
                   </div>
                   <div className='project2-subtitle'>

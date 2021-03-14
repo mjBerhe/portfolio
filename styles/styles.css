@@ -3,18 +3,21 @@ h1 {
   font-size: 3.5rem;
   font-weight: bold;
   color: white;
+  letter-spacing: -.05em;
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 2.75rem;
   font-weight: bold;
   color: white;
+  letter-spacing: -.05em;
 }
 
 h3 {
   font-size: 2rem;
   font-weight: normal;
   color: white;
+  letter-spacing: -.05em;
 }
 
 h4 {
@@ -88,7 +91,6 @@ h5 {
 }
 
 .main-container {
-  height: 100%;
   max-width: 60rem;
   margin: 0 auto;
   display: -ms-grid;
@@ -127,13 +129,18 @@ h5 {
       grid-template-rows: 20% 10% 55% 15%;
 }
 
+.project-title h3 {
+  font-size: 2.3rem;
+  font-weight: 900;
+}
+
 @media (max-width: 60rem) {
   .main-title {
     padding: 1rem .5rem;
   }
   .project-container {
-    -ms-grid-rows: 3rem auto 3rem;
-        grid-template-rows: 3rem auto 3rem;
+    -ms-grid-rows: 3rem minmax(auto, 14rem) 3rem;
+        grid-template-rows: 3rem minmax(auto, 14rem) 3rem;
     -ms-grid-columns: (50%)[2];
         grid-template-columns: repeat(2, 50%);
   }
@@ -175,11 +182,6 @@ h5 {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-}
-
-.project1-title h3 {
-  font-size: 2.2rem;
-  font-weight: bold;
 }
 
 .project1-subtitle {
@@ -228,7 +230,6 @@ h5 {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1/2;
-  height: 100%;
   padding-right: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -252,8 +253,8 @@ h5 {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1/2;
-  width: 100%;
-  min-width: 30rem;
+  height: 100%;
+  width: 30rem;
   margin-left: 1rem;
   position: relative;
   opacity: 0.8;
@@ -356,11 +357,6 @@ h5 {
           justify-content: flex-start;
 }
 
-.project2-title h3 {
-  font-size: 2.2rem;
-  font-weight: bold;
-}
-
 .project2-subtitle {
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
@@ -431,8 +427,8 @@ h5 {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
-  width: 100%;
-  min-width: 30rem;
+  height: 100%;
+  width: 30rem;
   margin-left: -1rem;
   position: relative;
   opacity: 0.8;
@@ -513,11 +509,10 @@ h5 {
   margin: 0 auto;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 15% minmax(auto, 50%) auto;
-      grid-template-rows: 15% minmax(auto, 50%) auto;
+  -ms-grid-rows: auto minmax(auto, 80%);
+      grid-template-rows: auto minmax(auto, 80%);
   -ms-grid-columns: minmax(20rem, 60rem);
       grid-template-columns: minmax(20rem, 60rem);
-  border: 1px solid white;
 }
 
 .skills-title {
@@ -539,11 +534,10 @@ h5 {
   width: 100%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 5rem auto;
-      grid-template-rows: 5rem auto;
+  -ms-grid-rows: 4rem auto;
+      grid-template-rows: 4rem auto;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
-  border: 1px solid green;
 }
 
 .technologies-headings {
@@ -556,35 +550,48 @@ h5 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.technologies-headings button {
-  width: 7rem;
-  height: 3rem;
-  font-size: 1.2rem;
-  background: transparent;
-  color: white;
+.button-1 {
+  width: 100%;
+  height: 100%;
   border: none;
+  font-size: 1.2rem;
 }
 
-.technology-items {
+.button-on {
+  color: black;
+  background: white;
+}
+
+.button-off {
+  color: white;
+  background: transparent;
+}
+
+.technology-items-container {
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-column: 1/4;
+}
+
+.technology-items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .technology-item {
@@ -603,7 +610,6 @@ h5 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 1px solid white;
 }
 
 .technology-item img {
@@ -646,7 +652,6 @@ h5 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 1px solid white;
 }
 
 .section-title h2 strong {

@@ -20,10 +20,10 @@ $max-width: 60rem;
    margin: 0 auto;
    
    display: grid;
-   grid-template-rows: 15% minmax(auto, 50%) auto;
+   grid-template-rows: auto minmax(auto, 80%);
    grid-template-columns: minmax($min-width, $max-width);
 
-   border: 1px solid white;
+   // border: 1px solid white;
 }
 
 .skills-title {
@@ -39,10 +39,10 @@ $max-width: 60rem;
    width: 100%;
 
    display: grid;
-   grid-template-rows: 5rem auto;
+   grid-template-rows: 4rem auto;
    grid-template-columns: 1fr 1fr 1fr;
 
-   border: 1px solid green;
+   // border: 2px solid green;
 }
 
 .technologies-headings {
@@ -50,27 +50,40 @@ $max-width: 60rem;
    grid-column: 1/4;
 
    display: flex;
-   justify-content: space-evenly;
+   justify-content: center;
    align-items: center;
 
-   // border: 1px solid white;
-   button {
-      width: 7rem;
-      height: 3rem;
-      font-size: 1.2rem;
+   // border: 1px solid yellow;
+}
 
-      background: transparent;
-      color: white;
-      border: none;
-   }
+.button-1 {
+   width: 100%;
+   height: 100%;
+   border: none;
+   font-size: 1.2rem;
+}
+
+.button-on {
+   color: black;
+   background: white;
+}
+
+.button-off {
+   color: white;
+   background: transparent;
+}
+
+.technology-items-container {
+   grid-row: 2/3;
+   grid-column: 1/4;
 }
 
 .technology-items {
-   grid-row: 2/3;
-   grid-column: 1/4;
-
    display: flex;
    flex-wrap: wrap;
+   justify-content: space-around;
+
+   // border: 1px solid green;
 }
 
 .technology-item {
@@ -82,7 +95,7 @@ $max-width: 60rem;
    justify-content: center;
    align-items: center;
 
-   border: 1px solid white;
+   // border: 1px solid white;
    img {
       height: 4rem;
       // width: 4rem;

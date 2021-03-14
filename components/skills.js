@@ -2,31 +2,67 @@ import { useState } from 'react';
 
 export default function Skills() {
 
-   const [isFrontEnd, setIsFrontEnd] = useState(true);
-   const [isBackEnd, setIsBackEnd] = useState(false);
-   const [isDeployment, setIsDeployment] = useState(false);
+   const [isFrontEnd, setIsFrontEnd] = useState({
+      on: true,
+      class: 'button-1 button-on'
+   });
+   const [isBackEnd, setIsBackEnd] = useState({
+      on: false,
+      class: 'button-1 button-off'
+   });
+   const [isDeployment, setIsDeployment] = useState({
+      on: false,
+      class: 'button-1 button-off'
+   });
 
    const handleFrontItems = (e) => {
-      if (!isFrontEnd) {
-         setIsFrontEnd(true);
-         setIsBackEnd(false);
-         setIsDeployment(false);
+      if (!isFrontEnd.on) {
+         setIsFrontEnd({
+            on: true,
+            class: 'button-1 button-on'
+         });
+         setIsBackEnd({
+            on: false,
+            class: 'button-1 button-off'
+         });
+         setIsDeployment({
+            on: false,
+            class: 'button-1 button-off'
+         });
       }
    }
 
    const handleBackItems = (e) => {
-      if (!isBackEnd) {
-         setIsFrontEnd(false);
-         setIsBackEnd(true);
-         setIsDeployment(false);
+      if (!isBackEnd.on) {
+         setIsFrontEnd({
+            on: false,
+            class: 'button-1 button-off'
+         });
+         setIsBackEnd({
+            on: true,
+            class: 'button-1 button-on'
+         });
+         setIsDeployment({
+            on: false,
+            class: 'button-1 button-off'
+         });
       }
    }
 
    const handleDeployment = (e) => {
-      if (!isDeployment) {
-         setIsFrontEnd(false);
-         setIsBackEnd(false);
-         setIsDeployment(true);
+      if (!isDeployment.on) {
+         setIsFrontEnd({
+            on: false,
+            class: 'button-1 button-off'
+         });
+         setIsBackEnd({
+            on: false,
+            class: 'button-1 button-off'
+         });
+         setIsDeployment({
+            on: true,
+            class: 'button-1 button-on'
+         });
       }
    }
 
@@ -40,13 +76,13 @@ export default function Skills() {
             <div className='technolgies-container'>
 
                <div className='technologies-headings'>
-                  <button onClick={handleFrontItems}>Front-End</button>
-                  <button onClick={handleBackItems}>Back-End</button>
-                  <button onClick={handleDeployment}>Deployment</button>
+                  <button onClick={handleFrontItems} className={isFrontEnd.class} >Front-End</button>
+                  <button onClick={handleBackItems} className={isBackEnd.class}>Back-End</button>
+                  <button onClick={handleDeployment} className={isDeployment.class}>Deployment</button>
                </div>
 
-               <div className='technology-items'>
-                  {isFrontEnd && 
+               <div className='technology-items-container'>
+                  {isFrontEnd.on && 
                      <div className='technology-front-items technology-items'>
                         <div className='technology-item'>
                            <img src="/JS_Logo.png" alt=""/>
@@ -74,7 +110,7 @@ export default function Skills() {
                         </div>
                      </div>
                   }
-                  {isBackEnd &&
+                  {isBackEnd.on &&
                      <div className='technology-back-items technology-items'>
                         <div className='technology-item'>
                            <img src="/NodeJS_Logo.png" alt=""/>
@@ -90,7 +126,7 @@ export default function Skills() {
                         </div>
                      </div>
                   }
-                  {isDeployment &&
+                  {isDeployment.on &&
                      <div className='technology-deployment-items technology-items'>
                         <div className='technology-item'>
                            <img src="/Heroku_Logo.png" alt=""/>
