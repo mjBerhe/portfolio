@@ -12,7 +12,7 @@ export default function Main() {
             <section className='project-container project1-container'>
                <div className='project-info-container project1-info-container'>
                   <div className='project-title project1-title'>
-                     <Link href='/dpsCalculator'>
+                     <Link href='/dps'>
                         <a><h3>DPS Calculator</h3></a>
                      </Link>
                   </div>

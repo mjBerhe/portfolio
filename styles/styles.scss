@@ -3,9 +3,13 @@
 @import './general/fonts';
 @import './general/colors';
 
+@import './pages/dps';
+
 @import './components/header';
 @import './components/main';
 @import './components/skills';
+
+
 
 * {
    box-sizing: border-box;
@@ -36,7 +40,6 @@ $max-width: 60rem;
    background: black;
    display: grid;
    grid-template-rows: 100vh auto auto auto;
-   // grid-template-columns: minmax(1rem, 1fr) minmax($min-width, $max-width) minmax(1rem, 1fr);
    grid-template-columns: minmax($min-width, 100vw);
 }
 
@@ -50,6 +53,10 @@ $max-width: 60rem;
    h2 strong {
       color: $secondary-color;
    }
+}
+
+.nav {
+   padding: 1rem;
 }
 
 

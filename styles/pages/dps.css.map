@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAGA,AAAA,cAAc,CAAC;EACZ,KAAK,EAAE,IAAI;EACX,UAAU,EAAE,KAAK;CACnB;;AAED,AAAA,sBAAsB,CAAC;EACpB,SAAS,EARA,KAAK;EASd,MAAM,EAAE,MAAM;EAEd,OAAO,EAAE,IAAI;EACb,kBAAkB,EAAE,IAAI;EACxB,qBAAqB,EAAE,oBAA8B;CACvD",
+    "sources": [
+        "dps.scss"
+    ],
+    "names": [],
+    "file": "dps.css"
+}
