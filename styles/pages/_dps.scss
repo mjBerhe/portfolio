@@ -2,7 +2,7 @@ $min-width: 20rem;
 $max-width: 60rem;
 
 .dps-container {
-   width: 100vw;
+   width: 100%;
    min-height: 100vh;
 }
 
@@ -20,7 +20,15 @@ $max-width: 60rem;
 .dps-title {
    grid-row: 2/3;
    grid-column: 1/2;
-   padding: 0rem 1rem;
+   padding: 2rem 1rem;
+
+   display: flex;
+   justify-content: center;
+
+   // border: 1px solid white;
+   h2 strong {
+      color: $secondary-color;
+   }
 }
 
 .dps-screenshot {
@@ -42,6 +50,14 @@ $max-width: 60rem;
    }
    strong {
       color: $secondary-color;
+   }
+   p {
+      margin-bottom: 1rem;
+      padding: 0 1rem;
+      strong {
+         font-weight: bold;
+         color: white;
+      }
    }
 }
 

@@ -36,7 +36,7 @@ export default function Dps() {
    }, [vantaEffect]);
 
    const settings = {
-      dots: true,
+      // dots: true,
       infinite: true,
       speed: 500,
       slidesToShow: 1,
@@ -56,8 +56,8 @@ export default function Dps() {
                   <a><h4>Home</h4></a>
                </Link>
             </div>
-            <div className='section-title dps-title'>
-               <h2><strong>//&nbsp;&nbsp;</strong>DPS Calculator</h2>
+            <div className='dps-title'>
+               <h2>DPS Calculator</h2>
             </div>
             <div className='dps-screenshot'>
                <Slider {...settings}>
@@ -70,16 +70,23 @@ export default function Dps() {
                </Slider>
             </div>
             <div className='dps-info dps-info-1'>
-               <h3><strong>//&nbsp;</strong> Description</h3>
+               <h3><strong>//&nbsp;&nbsp;</strong>Motive</h3>
                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget est  
-                  placerat, aliquet elit a, tempus elit. Vestibulum finibus, eros in fringilla
-                  ultrices, risus arcu semper libero, in rutrum erat sapien ac lacus. Mauris sollicitudin
-                  feugiat varius. Nunc quis ultrices nulla. Cras dictum ligula ac leo rhoncus sollicitudin.
+                  <strong>DPS Calculator</strong> is a web-based visual tool meant to help users
+                  make useful calculations for the popular online video game <i>Oldschool Runescape</i>.
+                  Damage per second, or DPS, is an essential metric players optimize to progress as
+                  quickly as possible. Since the game’s engine doesn’t provide this metric, speculation
+                  and confusion arises between players on which items/setups are better in different situations. 
+               </p>
+               <p>
+                  My goal when creating this tool was to make something both easily accessible for all types of
+                  players, yet still detailed and concise where all aspects of the game are covered. A similar
+                  tool already existed, however it was a spreadsheet and I felt it was too overwhelming for
+                  new players.
                </p>
             </div>
             <div className='dps-info dps-info-2'>
-               <h3><strong>//&nbsp;</strong> Process</h3>
+               <h3><strong>//&nbsp;&nbsp;</strong>Process</h3>
                <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget est  
                   placerat, aliquet elit a, tempus elit. Vestibulum finibus, eros in fringilla

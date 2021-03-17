@@ -43,7 +43,7 @@ a {
 }
 
 .dps-container {
-  width: 100vw;
+  width: 100%;
   min-height: 100vh;
 }
 
@@ -66,7 +66,17 @@ a {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1/2;
-  padding: 0rem 1rem;
+  padding: 2rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.dps-title h2 strong {
+  color: #aabee4;
 }
 
 .dps-screenshot {
@@ -96,6 +106,16 @@ a {
 
 .dps-info strong {
   color: #aabee4;
+}
+
+.dps-info p {
+  margin-bottom: 1rem;
+  padding: 0 1rem;
+}
+
+.dps-info p strong {
+  font-weight: bold;
+  color: white;
 }
 
 .dps-info-1 {
@@ -136,7 +156,6 @@ a {
       grid-template-rows: 50% 50%;
   -ms-grid-columns: minmax(20rem, 100%);
       grid-template-columns: minmax(20rem, 100%);
-  border: solid 2px yellow;
 }
 
 .header-title {
