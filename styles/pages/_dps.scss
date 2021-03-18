@@ -14,7 +14,7 @@ $max-width: 60rem;
    grid-template-rows: 10rem repeat(6, auto);
    grid-template-columns: minmax($min-width, 100%);
 
-   border: 2px solid yellow;
+   // border: 2px solid yellow;
 }
 
 .dps-title {
@@ -23,7 +23,7 @@ $max-width: 60rem;
    padding: 2rem 1rem;
 
    display: flex;
-   justify-content: center;
+   justify-content: flex-start;
 
    // border: 1px solid white;
    h2 strong {
@@ -44,7 +44,7 @@ $max-width: 60rem;
 }
 
 .dps-info {
-   padding: 1rem;
+   padding: 1rem 2rem;
    h3 {
       padding-bottom: 2rem;
    }
@@ -53,7 +53,7 @@ $max-width: 60rem;
    }
    p {
       margin-bottom: 1rem;
-      padding: 0 1rem;
+      // padding: 0 1rem;
       strong {
          font-weight: bold;
          color: white;

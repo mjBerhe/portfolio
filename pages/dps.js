@@ -57,7 +57,7 @@ export default function Dps() {
                </Link>
             </div>
             <div className='dps-title'>
-               <h2>DPS Calculator</h2>
+               <h2><strong>//&nbsp;&nbsp;</strong>DPS Calculator</h2>
             </div>
             <div className='dps-screenshot'>
                <Slider {...settings}>
@@ -88,10 +88,16 @@ export default function Dps() {
             <div className='dps-info dps-info-2'>
                <h3><strong>//&nbsp;&nbsp;</strong>Process</h3>
                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget est  
-                  placerat, aliquet elit a, tempus elit. Vestibulum finibus, eros in fringilla
-                  ultrices, risus arcu semper libero, in rutrum erat sapien ac lacus. Mauris sollicitudin
-                  feugiat varius. Nunc quis ultrices nulla. Cras dictum ligula ac leo rhoncus sollicitudin.
+                  Differentiating between local state vs global state was a main issue throughout the project.
+                  The useState hook proved to be very powerful and intuitive when working on a local component,
+                  however it became more tedious whenever I needed to transfer information between components.
+                  The library Zustand was a perfect fix providing a global state store to use between all components.
+               </p>
+               <p>
+               I used MongoDB as a database to store every item in the game. My plan was to query the database when the web page loaded so that all items would be available. This led to a big problem where the initial loading time would be too long. This is when I transferred to Next.js as they provided a way to pre-render the whole page along with the database queries which reduced loading time significantly.
+               </p>
+               <p>
+               Working on this project made me very comfortable working with React.js + Next.js for any of my front end needs. I also learned how useful a backend database tool such as MongoDB can be for future projects.
                </p>
             </div>
          </div>

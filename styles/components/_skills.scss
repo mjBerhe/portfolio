@@ -64,8 +64,9 @@ $max-width: 60rem;
 }
 
 .button-on {
-   color: black;
-   background: white;
+   color: white;
+   background: transparent;
+   border-top: 2px solid white;
 }
 
 .button-off {

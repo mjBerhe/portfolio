@@ -60,6 +60,33 @@ export default function Main() {
                   </a>
                </div>
             </section>
+
+            <section className='project-container project3-container'>
+               <div className='project-info-container project3-info-container'>
+                  <div className='project-title project3-title'>
+                     <Link href='/portfolio'>
+                        <a><h3>Web Portfolio</h3></a>
+                     </Link>
+                  </div>
+                  <div className='project3-subtitle'>
+                     <h5>Personal Website</h5>
+                  </div>
+                  <div className='project3-description'>
+                     <h4>A user friendly visual tool to help compare in-game scenarios to optimize performance</h4>
+                  </div>
+                  <div className='project3-tools'>
+                     <h4>React.js</h4>
+                     <h4>Next.js</h4>
+                     <h4>SASS</h4>
+                  </div>
+               </div>
+               <div className='project3-preview-container'>
+                  <img src="Portfolio_Screenshot.png" alt="project3-preview"/>
+                  <a href="https://osrsdps.com/" target="_blank" className='project3-preview-overlay'>
+                     <h3 className='project3-preview-text'>Click Me</h3>
+                  </a>
+               </div>
+            </section>
          </div>
       </section>
    )
