@@ -58,6 +58,14 @@ export default function Dps() {
             </div>
             <div className='dps-title'>
                <h2><strong>//&nbsp;&nbsp;</strong>DPS Calculator</h2>
+               <div className='dps-title-links'>
+                  <a href="https://osrsdps.com/" target="_blank">
+                     <img src="logos/Link_Logo.png" alt=""/>
+                  </a>
+                  <a href="https://github.com/mjBerhe/dps-calc" target="_blank">
+                     <img src="logos/Github_Logo.png" alt=""/>
+                  </a>
+               </div>
             </div>
             <div className='dps-screenshot'>
                <Slider {...settings}>
@@ -94,10 +102,10 @@ export default function Dps() {
                   The library Zustand was a perfect fix providing a global state store to use between all components.
                </p>
                <p>
-               I used MongoDB as a database to store every item in the game. My plan was to query the database when the web page loaded so that all items would be available. This led to a big problem where the initial loading time would be too long. This is when I transferred to Next.js as they provided a way to pre-render the whole page along with the database queries which reduced loading time significantly.
+                  I used MongoDB as a database to store every item in the game. My plan was to query the database when the web page loaded so that all items would be available. This led to a big problem where the initial loading time would be too long. This is when I transferred to Next.js as they provided a way to pre-render the whole page along with the database queries which reduced loading time significantly.
                </p>
                <p>
-               Working on this project made me very comfortable working with React.js + Next.js for any of my front end needs. I also learned how useful a backend database tool such as MongoDB can be for future projects.
+                  Working on this project made me very comfortable working with React.js + Next.js for any of my front end needs. I also learned how useful a backend database tool such as MongoDB can be for future projects.
                </p>
             </div>
          </div>

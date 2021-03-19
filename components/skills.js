@@ -85,27 +85,27 @@ export default function Skills() {
                   {isFrontEnd.on && 
                      <div className='technology-front-items technology-items'>
                         <div className='technology-item'>
-                           <img src="/JS_Logo.png" alt=""/>
+                           <img src="logos/JS_Logo.png" alt=""/>
                            <h4>JavaScript</h4>
                         </div>
                         <div className='technology-item'>
-                           <img src="/HTML_Logo.png" alt=""/>
+                           <img src="logos/HTML_Logo.png" alt=""/>
                            {/* <h4>HTML</h4> */}
                         </div>
                         <div className='technology-item'>
-                           <img src="/CSS_Logo.png" alt=""/>
+                           <img src="logos/CSS_Logo.png" alt=""/>
                            {/* <h4>CSS</h4> */}
                         </div>
                         <div className='technology-item'>
-                           <img src="/SASS_Logo.png" alt=""/>
+                           <img src="logos/SASS_Logo.png" alt=""/>
                            {/* <h4>SASS</h4> */}
                         </div>
                         <div className='technology-item'>
-                           <img src="/ReactJS_Logo.png" alt=""/>
+                           <img src="logos/ReactJS_Logo.png" alt=""/>
                            <h4>React.js</h4>
                         </div>
                         <div className='technology-item'>
-                           <img src="/NextJS_Logo.png" alt=""/>
+                           <img src="logos/NextJS_Logo.png" alt=""/>
                            {/* <h4>Next.js</h4> */}
                         </div>
                      </div>
@@ -113,15 +113,15 @@ export default function Skills() {
                   {isBackEnd.on &&
                      <div className='technology-back-items technology-items'>
                         <div className='technology-item'>
-                           <img src="/NodeJS_Logo.png" alt=""/>
+                           <img src="logos/NodeJS_Logo.png" alt=""/>
                            <h4>Node.js</h4>
                         </div>
                         <div className='technology-item'>
-                           <img src="/MongoDB_Logo2.png" alt=""/>
+                           <img src="logos/MongoDB_Logo2.png" alt=""/>
                            {/* <h4>MongoDB</h4> */}
                         </div>
                         <div className='technology-item'>
-                           <img src="/SocketIO_Logo.png" alt=""/>
+                           <img src="logos/SocketIO_Logo.png" alt=""/>
                            <h4>Socket.io</h4>
                         </div>
                      </div>
@@ -129,15 +129,15 @@ export default function Skills() {
                   {isDeployment.on &&
                      <div className='technology-deployment-items technology-items'>
                         <div className='technology-item'>
-                           <img src="/Heroku_Logo.png" alt=""/>
+                           <img src="logos/Heroku_Logo.png" alt=""/>
                            <h4>Heroku</h4>
                         </div>
                         <div className='technology-item'>
-                           <img src="/Github_Logo.png" alt=""/>
+                           <img src="logos/Github_Logo.png" alt=""/>
                            <h4>Github</h4>
                         </div>
                         <div className='technology-item'>
-                           <img src="/Vercel_Logo.png" alt=""/>
+                           <img src="logos/Vercel_Logo.png" alt=""/>
                            {/* <h4>Heroku</h4> */}
                         </div>
                      </div>
