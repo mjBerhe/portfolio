@@ -138,7 +138,7 @@ export default function Skills() {
                         </div>
                         <div className='technology-item'>
                            <img src="logos/Vercel_Logo.png" alt=""/>
-                           {/* <h4>Heroku</h4> */}
+                           {/* <h4>Vercel</h4> */}
                         </div>
                      </div>
                   }

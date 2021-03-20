@@ -108,6 +108,31 @@ export default function Dps() {
                   Working on this project made me very comfortable working with React.js + Next.js for any of my front end needs. I also learned how useful a backend database tool such as MongoDB can be for future projects.
                </p>
             </div>
+            <div className='dps-info dps-info-3'>
+               {/* <h3><strong>//&nbsp;&nbsp;</strong>Technologies Used</h3> */}
+               <div className='technology-items'>
+                  <div className='technology-item'>
+                     <img src="logos/ReactJS_Logo.png" alt=""/>
+                     <h4>React.js</h4>
+                  </div>
+                  <div className='technology-item'>
+                     <img src="logos/NextJS_Logo.png" alt=""/>
+                     {/* <h4>Next.js</h4> */}
+                  </div>
+                  <div className='technology-item'>
+                     <img src="logos/SASS_Logo.png" alt=""/>
+                     {/* <h4>SASS</h4> */}
+                  </div>
+                  <div className='technology-item'>
+                     <img src="logos/MongoDB_Logo2.png" alt=""/>
+                     {/* <h4>MongoDB</h4> */}
+                  </div>
+                  <div className='technology-item'>
+                     <img src="logos/Vercel_Logo.png" alt=""/>
+                     {/* <h4>Vercel</h4> */}
+                  </div>
+               </div>
+            </div>
          </div>
       </div>
    )

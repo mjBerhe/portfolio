@@ -52,8 +52,8 @@ a {
   margin: 0 auto;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 10rem (auto)[6];
-      grid-template-rows: 10rem repeat(6, auto);
+  -ms-grid-rows: 10rem (auto)[7];
+      grid-template-rows: 10rem repeat(7, auto);
   -ms-grid-columns: minmax(20rem, 100%);
       grid-template-columns: minmax(20rem, 100%);
 }
@@ -117,11 +117,11 @@ a {
 }
 
 .dps-info {
-  padding: 1rem 2rem;
+  padding: 0 2rem;
 }
 
 .dps-info h3 {
-  padding-bottom: 2rem;
+  padding: 1rem 0;
 }
 
 .dps-info strong {
@@ -129,7 +129,7 @@ a {
 }
 
 .dps-info p {
-  margin-bottom: 1rem;
+  margin: 1rem 0;
 }
 
 .dps-info p strong {
@@ -147,6 +147,15 @@ a {
 }
 
 .dps-info-2 {
+  -ms-grid-row: 6;
+  -ms-grid-row-span: 1;
+  grid-row: 6/7;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+}
+
+.dps-info-3 {
   -ms-grid-row: 5;
   -ms-grid-row-span: 1;
   grid-row: 5/6;
