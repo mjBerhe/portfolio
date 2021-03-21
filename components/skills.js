@@ -86,59 +86,72 @@ export default function Skills() {
                      <div className='technology-front-items technology-items'>
                         <div className='technology-item'>
                            <img src="logos/JS_Logo.png" alt=""/>
-                           <h4>JavaScript</h4>
+                           <a href="https://www.javascript.com/" className='technology-item-overlay' target='blank'>
+                              <img src="logos/JS_Logo2.png" alt=""/>
+                           </a>
                         </div>
                         <div className='technology-item'>
-                           <img src="logos/HTML_Logo.png" alt=""/>
-                           {/* <h4>HTML</h4> */}
+                           <a href="https://html.spec.whatwg.org/multipage/" target='blank'>
+                              <img src="logos/HTML_Logo.png" alt=""/>
+                           </a>
                         </div>
                         <div className='technology-item'>
-                           <img src="logos/CSS_Logo.png" alt=""/>
-                           {/* <h4>CSS</h4> */}
+                           <a href="https://www.w3.org/Style/CSS/Overview.en.html" target='blank'>
+                              <img src="logos/CSS_Logo.png" alt=""/>
+                           </a>
                         </div>
                         <div className='technology-item'>
-                           <img src="logos/SASS_Logo.png" alt=""/>
-                           {/* <h4>SASS</h4> */}
+                           <a href="https://sass-lang.com/" target='blank'>
+                              <img src="logos/SASS_Logo.png" alt=""/>
+                           </a>
                         </div>
                         <div className='technology-item'>
-                           <img src="logos/ReactJS_Logo.png" alt=""/>
-                           <h4>React.js</h4>
+                           <a href="https://reactjs.org/" target='blank'>
+                              <img src="logos/ReactJS_Logo.png" alt=""/>
+                           </a>                         
                         </div>
                         <div className='technology-item'>
-                           <img src="logos/NextJS_Logo.png" alt=""/>
-                           {/* <h4>Next.js</h4> */}
+                           <a href="https://nextjs.org/" target='blank'>
+                              <img src="logos/NextJS_Logo.png" alt=""/>
+                           </a>
                         </div>
                      </div>
                   }
                   {isBackEnd.on &&
                      <div className='technology-back-items technology-items'>
                         <div className='technology-item'>
-                           <img src="logos/NodeJS_Logo.png" alt=""/>
-                           <h4>Node.js</h4>
+                           <a href="https://nodejs.org/en/" target='blank'>
+                              <img src="logos/NodeJS_Logo.png" alt=""/>
+                           </a>  
                         </div>
                         <div className='technology-item'>
-                           <img src="logos/MongoDB_Logo2.png" alt=""/>
-                           {/* <h4>MongoDB</h4> */}
+                           <a href="https://www.mongodb.com/" target='blank'>
+                              <img src="logos/MongoDB_Logo2.png" alt=""/>
+                           </a>
                         </div>
                         <div className='technology-item'>
-                           <img src="logos/SocketIO_Logo.png" alt=""/>
-                           <h4>Socket.io</h4>
+                           <a href="https://socket.io/" target='blank'>
+                              <img src="logos/SocketIO_Logo.png" alt=""/>
+                           </a>    
                         </div>
                      </div>
                   }
                   {isDeployment.on &&
                      <div className='technology-deployment-items technology-items'>
                         <div className='technology-item'>
-                           <img src="logos/Heroku_Logo.png" alt=""/>
-                           <h4>Heroku</h4>
+                           <a href="https://www.heroku.com/" target='blank'>
+                              <img src="logos/Heroku_Logo.png" alt=""/>
+                           </a>      
                         </div>
                         <div className='technology-item'>
-                           <img src="logos/Github_Logo.png" alt=""/>
-                           <h4>Github</h4>
+                           <a href="https://github.com/" target='blank'>
+                              <img src="logos/Github_Logo.png" alt=""/>
+                           </a>
                         </div>
                         <div className='technology-item'>
-                           <img src="logos/Vercel_Logo.png" alt=""/>
-                           {/* <h4>Vercel</h4> */}
+                           <a href="https://vercel.com/" target='blank'>
+                              <img src="logos/Vercel_Logo.png" alt=""/>
+                           </a>                           
                         </div>
                      </div>
                   }

@@ -112,24 +112,29 @@ export default function Dps() {
                {/* <h3><strong>//&nbsp;&nbsp;</strong>Technologies Used</h3> */}
                <div className='technology-items'>
                   <div className='technology-item'>
-                     <img src="logos/ReactJS_Logo.png" alt=""/>
-                     <h4>React.js</h4>
+                     <a href="https://reactjs.org/" target='blank'>
+                        <img src="logos/ReactJS_Logo.png" alt=""/>
+                     </a>                         
                   </div>
                   <div className='technology-item'>
-                     <img src="logos/NextJS_Logo.png" alt=""/>
-                     {/* <h4>Next.js</h4> */}
+                     <a href="https://nextjs.org/" target='blank'>
+                        <img src="logos/NextJS_Logo.png" alt=""/>
+                     </a>
                   </div>
                   <div className='technology-item'>
-                     <img src="logos/SASS_Logo.png" alt=""/>
-                     {/* <h4>SASS</h4> */}
+                     <a href="https://sass-lang.com/" target='blank'>
+                        <img src="logos/SASS_Logo.png" alt=""/>
+                     </a>
                   </div>
                   <div className='technology-item'>
-                     <img src="logos/MongoDB_Logo2.png" alt=""/>
-                     {/* <h4>MongoDB</h4> */}
+                     <a href="https://www.mongodb.com/" target='blank'>
+                        <img src="logos/MongoDB_Logo2.png" alt=""/>
+                     </a>
                   </div>
                   <div className='technology-item'>
-                     <img src="logos/Vercel_Logo.png" alt=""/>
-                     {/* <h4>Vercel</h4> */}
+                     <a href="https://vercel.com/" target='blank'>
+                        <img src="logos/Vercel_Logo.png" alt=""/>
+                     </a>                           
                   </div>
                </div>
             </div>
