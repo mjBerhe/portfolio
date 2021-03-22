@@ -84,10 +84,15 @@ export default function Skills() {
                <div className='technology-items-container'>
                   {isFrontEnd.on && 
                      <div className='technology-front-items technology-items'>
-                        <div className='technology-item'>
+                        {/* <div className='technology-item'>
                            <img src="logos/JS_Logo.png" alt=""/>
                            <a href="https://www.javascript.com/" className='technology-item-overlay' target='blank'>
                               <img src="logos/JS_Logo2.png" alt=""/>
+                           </a>
+                        </div> */}
+                        <div className='technology-item'>
+                           <a href="https://www.javascript.com/" target='blank'>
+                              <img src="logos/JS_Logo.png" alt=""/>
                            </a>
                         </div>
                         <div className='technology-item'>

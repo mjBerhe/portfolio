@@ -80,12 +80,13 @@ a, a:hover, a:active, a:focus {
 }
 
 .dps-title-links {
+  min-width: 6rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -96,8 +97,22 @@ a, a:hover, a:active, a:focus {
 }
 
 .dps-title-links img {
-  padding-left: 2rem;
   height: 2rem;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform 150ms ease-in;
+  transition: -webkit-transform 150ms ease-in;
+  transition: transform 150ms ease-in;
+  transition: transform 150ms ease-in, -webkit-transform 150ms ease-in;
+}
+
+.dps-title-links img:hover {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+  -webkit-transition: -webkit-transform 150ms ease-in;
+  transition: -webkit-transform 150ms ease-in;
+  transition: transform 150ms ease-in;
+  transition: transform 150ms ease-in, -webkit-transform 150ms ease-in;
 }
 
 .dps-screenshot {
@@ -115,6 +130,12 @@ a, a:hover, a:active, a:focus {
 
 .dps-screenshot img {
   width: 100%;
+}
+
+@media (max-width: 35rem) {
+  .dps-screenshot {
+    width: calc(100% - 2rem);
+  }
 }
 
 .dps-info {
@@ -218,11 +239,10 @@ a, a:hover, a:active, a:focus {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1/2;
-  border: 2px solid white;
 }
 
 .main-container {
-  height: 100%;
+  min-height: 100%;
   max-width: 60rem;
   margin: 0 auto;
   display: -ms-grid;
@@ -260,20 +280,59 @@ a, a:hover, a:active, a:focus {
       grid-template-rows: 20% 10% 55% 15%;
 }
 
+.project-title {
+  position: relative;
+}
+
 .project-title h3 {
   font-size: 2.3rem;
   font-weight: 900;
 }
 
+.project-title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: #aabee4;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transition: -webkit-transform 200ms ease-in;
+  transition: -webkit-transform 200ms ease-in;
+  transition: transform 200ms ease-in;
+  transition: transform 200ms ease-in, -webkit-transform 200ms ease-in;
+}
+
+.project-title:hover::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
 @media (max-width: 60rem) {
-  .main-title {
-    padding: 1rem .5rem;
-  }
   .project-container {
-    -ms-grid-rows: 3rem minmax(auto, 14rem) 3rem;
-        grid-template-rows: 3rem minmax(auto, 14rem) 3rem;
+    -ms-grid-rows: 1.5rem minmax(auto, 14rem) 1.5rem;
+        grid-template-rows: 1.5rem minmax(auto, 14rem) 1.5rem;
     -ms-grid-columns: (50%)[2];
         grid-template-columns: repeat(2, 50%);
+  }
+}
+
+@media (max-width: 47.5rem) {
+  .main-title {
+    width: 30rem;
+    margin: 0 auto;
+  }
+  .project-container {
+    -ms-grid-rows: 1.5rem (minmax(auto, 14rem))[2] 4rem;
+        grid-template-rows: 1.5rem repeat(2, minmax(auto, 14rem)) 4rem;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
   }
 }
 
@@ -303,16 +362,14 @@ a, a:hover, a:active, a:focus {
   -ms-grid-column-span: 1;
   grid-column: 1/2;
   height: 100%;
-  padding-right: 1rem;
+  margin-right: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-self: flex-end;
 }
 
 .project1-subtitle {
@@ -450,6 +507,31 @@ a, a:hover, a:active, a:focus {
   }
 }
 
+@media (max-width: 47.5rem) {
+  .project1-info-container {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    margin-bottom: 1.5rem;
+  }
+  .project1-preview-container {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    margin-left: 0;
+  }
+}
+
 .project2-container {
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
@@ -476,16 +558,14 @@ a, a:hover, a:active, a:focus {
   -ms-grid-column-span: 1;
   grid-column: 1/2;
   height: 100%;
-  padding-left: 1rem;
+  margin-left: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  justify-self: flex-start;
 }
 
 .project2-subtitle {
@@ -624,6 +704,31 @@ a, a:hover, a:active, a:focus {
   }
 }
 
+@media (max-width: 47.5rem) {
+  .project2-info-container {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    margin-bottom: 1.5rem;
+  }
+  .project2-preview-container {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    margin-left: 0;
+  }
+}
+
 .project3-container {
   -ms-grid-row: 4;
   -ms-grid-row-span: 1;
@@ -650,16 +755,14 @@ a, a:hover, a:active, a:focus {
   -ms-grid-column-span: 1;
   grid-column: 1/2;
   height: 100%;
-  padding-right: 1rem;
+  margin-right: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-self: flex-end;
 }
 
 .project3-subtitle {
@@ -776,6 +879,52 @@ a, a:hover, a:active, a:focus {
   opacity: 1;
 }
 
+@media (max-width: 60rem) {
+  .project3-info-container {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
+    -ms-grid-column-align: right;
+        justify-self: right;
+  }
+  .project3-preview-container {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
+}
+
+@media (max-width: 47.5rem) {
+  .project3-info-container {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    margin-bottom: 1.5rem;
+  }
+  .project3-preview-container {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    margin-left: 0;
+  }
+}
+
 .section-3 {
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
@@ -783,11 +932,10 @@ a, a:hover, a:active, a:focus {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1/2;
-  border: 2px solid white;
 }
 
 .skills-container {
-  height: 100%;
+  min-height: 100%;
   max-width: 60rem;
   margin: 0 auto;
   display: -ms-grid;
@@ -933,29 +1081,7 @@ a, a:hover, a:active, a:focus {
   transition: transform 150ms ease-in, -webkit-transform 150ms ease-in;
 }
 
-.technology-item-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  opacity: 0;
-}
-
-.technology-item-overlay:hover {
-  opacity: 1;
-}
-
-.technology-item:hover img {
+.technology-item img:hover {
   -webkit-transform: scale(1.25);
           transform: scale(1.25);
   -webkit-transition: -webkit-transform 150ms ease-in;
@@ -990,7 +1116,7 @@ a, a:hover, a:active, a:focus {
 }
 
 .section-title {
-  padding: 1rem;
+  padding: 1.5rem 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
