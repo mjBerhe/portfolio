@@ -24,6 +24,7 @@ $max-width: 60rem;
 
    display: flex;
    justify-content: space-between;
+   align-items: center;
 
    // border: 1px solid white;
    h2 strong {
@@ -32,17 +33,20 @@ $max-width: 60rem;
 }
 
 .dps-title-links {
-   min-width: 6rem;
+   height: 100%;
+   min-height: 6rem;
 
    display: flex;
    justify-content: space-between;
    align-items: center;
+
    // border: 1px solid yellow;
    a {
       outline: none;
    }
    img {
       height: 2rem;
+      margin-left: 1rem;
       transform: scale(1);
       transition: transform 150ms ease-in;
 
@@ -51,6 +55,14 @@ $max-width: 60rem;
    img:hover {
       transform: scale(1.25);
       transition: transform 150ms ease-in;
+   }
+}
+
+@media (max-width: 30rem) {
+   .dps-title-links {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
    }
 }
 
@@ -63,12 +75,18 @@ $max-width: 60rem;
    justify-self: center;
    img {
       width: 100%;
+      height: 18rem;
+      border-radius: .5rem;
    }
 }
 
+// When width < 35rem
 @media (max-width: 35rem) {
    .dps-screenshot {
       width: calc(100% - 2rem);
+      img {
+         height: auto;
+      }
    }
 }
 

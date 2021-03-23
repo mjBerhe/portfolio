@@ -29,7 +29,7 @@ export default function Main() {
                   </div>
                </div>
                <div className='project1-preview-container'>
-                  <img src="DPS_Calc.png" alt="project1-preview"/>
+                  <img src="screenshots/DPS_Calc.png" alt="project1-preview"/>
                   <a href="https://osrsdps.com/" target="_blank" className='project1-preview-overlay'>
                      <h3 className='project1-preview-text'>Click Me</h3>
                   </a>
@@ -54,7 +54,7 @@ export default function Main() {
                   </div>
                </div>
                <div className='project2-preview-container'>
-                  <img src="2Slow_Screenshot.png" alt="project2-preview"/>
+                  <img src="screenshots/2Slow_Screenshot.png" alt="project2-preview"/>
                   <a href="https://osrsdps.com/" target="_blank" className='project2-preview-overlay'>
                      <h3 className='project2-preview-text'>Click Me</h3>
                   </a>
@@ -81,7 +81,7 @@ export default function Main() {
                   </div>
                </div>
                <div className='project3-preview-container'>
-                  <img src="Portfolio_Screenshot.png" alt="project3-preview"/>
+                  <img src="screenshots/Portfolio_Screenshot.png" alt="project3-preview"/>
                   <a href="https://osrsdps.com/" target="_blank" className='project3-preview-overlay'>
                      <h3 className='project3-preview-text'>Click Me</h3>
                   </a>

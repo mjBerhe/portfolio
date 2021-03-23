@@ -41,6 +41,7 @@ export default function Dps() {
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1,
+      adaptiveHeight: true,
    }
 
    return (
@@ -70,10 +71,16 @@ export default function Dps() {
             <div className='dps-screenshot'>
                <Slider {...settings}>
                   <div>
-                     <img src="DPS_Calc.png" alt="DPS Calculator screenshot"/>
+                     <img src="screenshots/DPS_Calc2.png" alt="DPS Calculator screenshot"/>
                   </div>
                   <div>
-                     <img src="DPS_Calc.png" alt="DPS Calculator screenshot"/>
+                     <img src="screenshots/DPS_Stats.png" alt="DPS Calculator screenshot"/>
+                  </div>
+                  <div>
+                     <img src="screenshots/DPS_Comparison.png" alt="DPS Calculator screenshot"/>
+                  </div>
+                  <div>
+                     <img src="screenshots/DPS_Equipment.png" alt="DPS Calculator screenshot"/>
                   </div>
                </Slider>
             </div>
