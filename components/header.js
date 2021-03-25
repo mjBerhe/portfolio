@@ -13,6 +13,7 @@ export default function Header() {
             <div className='header-title'>
                <h1>Matthew Berhe</h1>
                <h3><strong>//&nbsp;&nbsp;</strong>WEB DEVELOPER</h3>
+               {/* <h3>I create functional & useful tools for the web.</h3> */}
             </div> 
          </div>
       </section>

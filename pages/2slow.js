@@ -8,7 +8,7 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-export default function Dps() {
+export default function TooSlow() {
 
    const [vantaEffect, setVantaEffect] = useState(0);
    const myRef = useRef(null);
@@ -51,27 +51,27 @@ export default function Dps() {
             <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
          </Head>
 
-         <div className='dps-content-container'>
+         <div className='tooslow-content-container'>
             <div className='nav'>
                <Link href='/'>
                   <a><h4>Home</h4></a>
                </Link>
             </div>
-            <div className='dps-title'>
-               <h2><strong>//&nbsp;&nbsp;</strong>DPS Calculator</h2>
-               <div className='dps-title-links'>
-                  <a href="https://osrsdps.com/" target="_blank">
+            <div className='tooslow-title'>
+               <h2><strong>//&nbsp;&nbsp;</strong>2Slow</h2>
+               <div className='tooslow-title-links'>
+                  <a href="http://tooslow.herokuapp.com/gamelobby" target="_blank">
                      <img src="logos/Link_Logo.png" alt=""/>
                   </a>
-                  <a href="https://github.com/mjBerhe/dps-calc" target="_blank">
+                  <a href="https://github.com/mjBerhe/2S" target="_blank">
                      <img src="logos/Github_Logo.png" alt=""/>
                   </a>
                </div>
             </div>
-            <div className='dps-screenshot'>
+            <div className='tooslow-screenshot'>
                <Slider {...settings}>
                   <div>
-                     <img src="screenshots/DPS_Calc2.png" alt="DPS Calculator screenshot"/>
+                     <img src="screenshots/2Slow_Screenshot.png" alt="2Slow screenshot"/>
                   </div>
                   <div>
                      <img src="screenshots/DPS_Stats.png" alt="DPS Calculator screenshot"/>
@@ -84,14 +84,14 @@ export default function Dps() {
                   </div>
                </Slider>
             </div>
-            <div className='dps-info dps-info-1'>
+            <div className='tooslow-info tooslow-info-1'>
                <h3><strong>//&nbsp;&nbsp;</strong>Motive</h3>
                <p>
-                  <strong>DPS Calculator</strong> is a web-based visual tool meant to help users
-                  make useful calculations for the popular online video game <i>Oldschool Runescape</i>.
-                  Damage per second, or DPS, is an essential metric players optimize to progress as
-                  quickly as possible. Since the game’s engine doesn’t provide this metric, speculation
-                  and confusion arises between players on which items/setups are better in different situations. 
+                  As someone who loved math growing up, I never had many opportunities to see how I matched up
+                  against others. The goal with <strong>2Slow</strong> was to create an online platform where people can put
+                  their math skills to the test in a fast-paced competitive game. In short, users are pitted
+                  against each other answering questions in quick succession, where speed and accuracy are
+                  key to winning. 
                </p>
                <p>
                   My goal when creating this tool was to make something both easily accessible for all types of
@@ -100,24 +100,19 @@ export default function Dps() {
                   new players.
                </p>
             </div>
-            <div className='dps-info dps-info-2'>
+            <div className='tooslow-info tooslow-info-2'>
                <h3><strong>//&nbsp;&nbsp;</strong>Process</h3>
                <p>
-                  Differentiating between local state and global state was a main issue throughout the project.
-                  The useState hook proved to be very powerful and intuitive when working on a local component,
-                  however it became more tedious whenever I needed to transfer information between components.
-                  The library Zustand was a perfect fix providing a global state store to use between all components.
-               </p>
-               <p>
-                  I used MongoDB as a database to store every item in the game. My plan was to query the database when the web page loaded so that all items would be available. This led to a big problem where the initial loading time would be too long. This is when I transferred to Next.js as they provided a way to pre-render the whole page along with the database queries which reduced loading time significantly.
-               </p>
-               <p>
-                  Working on this project made me very comfortable working with React.js + Next.js for any of my front end needs. I also learned how useful a backend database tool such as MongoDB can be for future projects.
                </p>
             </div>
-            <div className='dps-info dps-info-3'>
+            <div className='tooslow-info tooslow-info-3'>
                {/* <h3><strong>//&nbsp;&nbsp;</strong>Technologies Used</h3> */}
                <div className='technology-items'>
+                  <div className='technology-item'>
+                     <a href="https://nodejs.org/en/" target='blank'>
+                        <img src="logos/NodeJS_Logo.png" alt=""/>
+                     </a>  
+                  </div>
                   <div className='technology-item'>
                      <a href="https://reactjs.org/" target='blank'>
                         <img src="logos/ReactJS_Logo.png" alt=""/>
@@ -134,13 +129,13 @@ export default function Dps() {
                      </a>
                   </div>
                   <div className='technology-item'>
-                     <a href="https://www.mongodb.com/" target='blank'>
-                        <img src="logos/MongoDB_Logo2.png" alt=""/>
+                     <a href="https://socket.io/" target='blank'>
+                        <img src="logos/SocketIO_Logo.png" alt=""/>
                      </a>
                   </div>
                   <div className='technology-item'>
-                     <a href="https://vercel.com/" target='blank'>
-                        <img src="logos/Vercel_Logo.png" alt=""/>
+                     <a href="https://www.heroku.com/" target='blank'>
+                        <img src="logos/Heroku_Logo.png" alt=""/>
                      </a>                           
                   </div>
                </div>

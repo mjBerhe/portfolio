@@ -1,7 +1,7 @@
 $min-width: 20rem;
 $max-width: 60rem;
 
-.dps-content-container {
+.tooslow-content-container {
    max-width: $max-width;
    margin: 0 auto;
 
@@ -12,7 +12,7 @@ $max-width: 60rem;
    // border: 2px solid yellow;
 }
 
-.dps-title {
+.tooslow-title {
    grid-row: 2/3;
    grid-column: 1/2;
    height: 100%;
@@ -28,7 +28,7 @@ $max-width: 60rem;
    }
 }
 
-.dps-title-links {
+.tooslow-title-links {
    height: 100%;
 
    display: flex;
@@ -54,14 +54,14 @@ $max-width: 60rem;
 }
 
 @media (max-width: 30rem) {
-   .dps-title-links {
+   .tooslow-title-links {
       display: flex;
       flex-direction: column;
       justify-content: space-around;
    }
 }
 
-.dps-screenshot {
+.tooslow-screenshot {
    grid-row: 3/4;
    grid-column: 1/2;
    width: 32rem;
@@ -77,7 +77,7 @@ $max-width: 60rem;
 
 // When width < 35rem
 @media (max-width: 35rem) {
-   .dps-screenshot {
+   .tooslow-screenshot {
       width: calc(100% - 2rem);
       img {
          height: auto;
@@ -85,7 +85,7 @@ $max-width: 60rem;
    }
 }
 
-.dps-info {
+.tooslow-info {
    padding: 0 2rem;
    h3 {
       padding: 1rem 0;
@@ -103,17 +103,17 @@ $max-width: 60rem;
    }
 }
 
-.dps-info-1 {
+.tooslow-info-1 {
    grid-row: 4/5;
    grid-column: 1/2;
 }
 
-.dps-info-2 {
+.tooslow-info-2 {
    grid-row: 6/7;
    grid-column: 1/2;
 }
 
-.dps-info-3 {
+.tooslow-info-3 {
    grid-row: 5/6;
    grid-column: 1/2;
 }

@@ -5,7 +5,7 @@ import FOG from 'vanta/dist/vanta.fog.min';
 import ReactFullpage from '@fullpage/react-fullpage';
 
 import Header from '../components/header';
-import Main from '../components/main';
+import Projects from '../components/projects';
 import Skills from '../components/skills';
 
 export default function Homepage() {
@@ -49,8 +49,8 @@ export default function Homepage() {
                <ReactFullpage.Wrapper>
                   <div className='homepage-container' ref={myRef}>
                      <Header/> 
-                     <Main/>
                      <Skills/>
+                     <Projects/>
                   </div>
                </ReactFullpage.Wrapper>
             )}

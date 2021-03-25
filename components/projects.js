@@ -1,9 +1,9 @@
 import Link from 'next/link';
 
-export default function Main() {
+export default function Projects() {
 
    return (
-      <section className='section section-2'>
+      <section className='section section-3'>
          <div className='main-container'>
             <div className='main-title section-title'>
                <h2><strong>//&nbsp;&nbsp;</strong>Featured Works</h2>
@@ -39,7 +39,9 @@ export default function Main() {
             <section className='project-container project2-container'>
                <div className='project-info-container project2-info-container'>
                   <div className='project-title project2-title'>
-                     <h3>2Slow</h3>
+                     <Link href='/2slow'>
+                        <a><h3>2Slow</h3></a>
+                     </Link>
                   </div>
                   <div className='project2-subtitle'>
                      <h5>Competitive Math Game</h5>

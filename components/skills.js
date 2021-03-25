@@ -67,11 +67,20 @@ export default function Skills() {
    }
 
    return (
-      <section className='section section-3'>
+      <section className='section section-2'>
          <div className='skills-container'>
-            <div className='skills-title section-title'>
-               <h2><strong>//&nbsp;&nbsp;</strong>Technologies</h2>
+
+            <div className='about-me'>
+               <h3>
+                  I am a self-taught developer from Toronto, Ontario that enjoys creating interactive
+                  & useful websites. I strive to continuously improve my work to create the best
+                  product possible.
+               </h3>
             </div>
+
+            {/* <div className='skills-title section-title'>
+               <h2><strong>//&nbsp;&nbsp;</strong>Technologies</h2>
+            </div> */}
 
             <div className='technolgies-container'>
 
