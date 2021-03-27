@@ -19,16 +19,19 @@ export default function Projects() {
                   <div className='project1-subtitle'>
                      <h5>for Oldschool Runescape</h5>
                   </div>
-                  <div className='project1-description'>
+                  <div className='project-description project1-description'>
                      <h4>A user friendly visual tool to help compare in-game scenarios to optimize performance</h4>
                   </div>
-                  <div className='project1-tools'>
+                  <div className='project-tools project1-tools'>
+                     <a href="https://github.com/mjBerhe/dps-calc" target="_blank">
+                        <img src="logos/Github_Logo.png" alt=""/>
+                     </a>
                      <h4>React.js</h4>
                      <h4>Node.js</h4>
                      <h4>MongoDB</h4>
                   </div>
                </div>
-               <div className='project1-preview-container'>
+               <div className='project-preview-container project1-preview-container'>
                   <img src="screenshots/DPS_Calc.png" alt="project1-preview"/>
                   <a href="https://osrsdps.com/" target="_blank" className='project1-preview-overlay'>
                      <h3 className='project1-preview-text'>Click Me</h3>
@@ -46,7 +49,7 @@ export default function Projects() {
                   <div className='project2-subtitle'>
                      <h5>Competitive Math Game</h5>
                   </div>
-                  <div className='project2-description'>
+                  <div className='project-description project2-description'>
                      <h4>A user friendly visual tool to help compare in-game scenarios to optimize performance</h4>
                   </div>
                   <div className='project2-tools'>
@@ -55,7 +58,7 @@ export default function Projects() {
                      <h4>Node.js</h4>
                   </div>
                </div>
-               <div className='project2-preview-container'>
+               <div className='project-preview-container project2-preview-container'>
                   <img src="screenshots/2Slow_Screenshot.png" alt="project2-preview"/>
                   <a href="https://osrsdps.com/" target="_blank" className='project2-preview-overlay'>
                      <h3 className='project2-preview-text'>Click Me</h3>
@@ -73,7 +76,7 @@ export default function Projects() {
                   <div className='project3-subtitle'>
                      <h5>Personal Website</h5>
                   </div>
-                  <div className='project3-description'>
+                  <div className='project-description project3-description'>
                      <h4>A user friendly visual tool to help compare in-game scenarios to optimize performance</h4>
                   </div>
                   <div className='project3-tools'>
@@ -82,7 +85,7 @@ export default function Projects() {
                      <h4>SASS</h4>
                   </div>
                </div>
-               <div className='project3-preview-container'>
+               <div className='project-preview-container project3-preview-container'>
                   <img src="screenshots/Portfolio_Screenshot.png" alt="project3-preview"/>
                   <a href="https://osrsdps.com/" target="_blank" className='project3-preview-overlay'>
                      <h3 className='project3-preview-text'>Click Me</h3>
