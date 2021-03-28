@@ -7,6 +7,7 @@ import ReactFullpage from '@fullpage/react-fullpage';
 import Header from '../components/header';
 import Projects from '../components/projects';
 import Skills from '../components/skills';
+import Contact from '../components/contact';
 
 export default function Homepage() {
 
@@ -51,6 +52,7 @@ export default function Homepage() {
                      <Header/> 
                      <Skills/>
                      <Projects/>
+                     <Contact/>
                   </div>
                </ReactFullpage.Wrapper>
             )}

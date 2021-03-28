@@ -9,6 +9,7 @@
 @import './components/header';
 @import './components/projects';
 @import './components/skills';
+@import './components/contact';
 
 
 
@@ -40,7 +41,7 @@ $max-width: 60rem;
    
    background: black;
    display: grid;
-   grid-template-rows: 100vh auto auto auto;
+   grid-template-rows: 100vh repeat(4, auto);
    grid-template-columns: minmax($min-width, 100vw);
 }
 
