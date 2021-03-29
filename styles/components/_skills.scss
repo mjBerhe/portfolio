@@ -51,7 +51,7 @@ $max-width: 60rem;
 .technolgies-container {
    grid-row: 3/4;
    grid-column: 1/2;
-   width: 100%;
+   padding: 0 .5rem;
 
    display: grid;
    grid-template-rows: 4rem auto;

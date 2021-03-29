@@ -22,19 +22,13 @@ export default function Contact() {
             </div>
             
             <form className="contact-form" onSubmit={sendEmail}>
-               <input type="hidden" name="contact_number" />
+               <input type="text" name="sender" placeholder='Name' autoComplete={false}/>
 
-               <label>Name</label>
-               <input type="text" name="sender" />
+               <input type="text" name="senderEmail" placeholder='Email' autoComplete={false}/>
 
-               <label>Email</label>
-               <input type="email" name="senderEmail" />
+               <input type="text" name="subject" placeholder='Subject' autoComplete={false}/>
 
-               <label>Subject</label>
-               <input type="text" name="subject"/>
-
-               <label>Message</label>
-               <textarea name="message" />
+               <input type='text' name="message" placeholder='Message' autoComplete={false}/>
 
                <input type="submit" value="Send" />
             </form>
