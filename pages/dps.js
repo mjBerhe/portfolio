@@ -58,7 +58,7 @@ export default function Dps() {
                </Link>
             </div>
             <div className='dps-title'>
-               <h2><strong>//&nbsp;&nbsp;</strong>DPS Calculator</h2>
+               <h2>DPS Calculator</h2>
                <div className='dps-title-links'>
                   <a href="https://osrsdps.com/" target="_blank">
                      <img src="logos/Link_Logo.png" alt=""/>

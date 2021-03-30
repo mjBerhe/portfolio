@@ -85,6 +85,10 @@ $max-width: 60rem;
    // border: 1px solid green;
 }
 
+.button-1:focus {
+   outline: none;
+}
+
 .button-on {
    color: white;
    background: transparent;

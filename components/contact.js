@@ -18,19 +18,25 @@ export default function Contact() {
       <section className='section section-4'>
          <div className='contact-container'>
             <div className='contact-title section-title'>
-               <h2><strong>//&nbsp;&nbsp;</strong>Contact Me</h2>
+               <h2>Contact Me</h2>
+            </div>
+
+            <div className='contact-message'>
+               <h3>
+                  Send me a message and let's get talking!
+               </h3>
             </div>
             
             <form className="contact-form" onSubmit={sendEmail}>
-               <input type="text" name="sender" placeholder='Name' autoComplete={false}/>
+               <input type="text" className='form-name' name="sender" placeholder='Name' autoComplete='off'/>
 
-               <input type="text" name="senderEmail" placeholder='Email' autoComplete={false}/>
+               <input type="text" className='form-email' name="senderEmail" placeholder='Email' autoComplete='off'/>
 
-               <input type="text" name="subject" placeholder='Subject' autoComplete={false}/>
+               <input type="text" className='form-subject' name="subject" placeholder='Subject' autoComplete='off'/>
 
-               <input type='text' name="message" placeholder='Message' autoComplete={false}/>
+               <input type='text' className='form-message' name="message" placeholder='Message' autoComplete='off'/>
 
-               <input type="submit" value="Send" />
+               <input type="submit" className='form-submit' value="Send Message" />
             </form>
          </div>
       </section>

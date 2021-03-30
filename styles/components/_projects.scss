@@ -14,13 +14,13 @@ $max-width: 60rem;
    // border: 2px solid white;
 }
 
-.main-container {
+.projects-container {
    min-height: 100%;
    max-width: $max-width;
    margin: 0 auto;
 
    display: grid;
-   grid-template-rows: auto repeat(3, auto);
+   grid-template-rows: minmax(7.5rem, auto) repeat(3, auto);
    grid-template-columns: minmax($min-width, $max-width);
 
    // border: 2px solid yellow;
@@ -35,7 +35,7 @@ $max-width: 60rem;
 
 .project-container {
    display: grid;
-   grid-template-rows: 1.5rem auto 1.5rem;
+   grid-template-rows: 1rem auto 2rem;
    grid-template-columns: repeat(2, 50%);
    margin: 0 .5rem;
 
@@ -85,7 +85,7 @@ $max-width: 60rem;
    padding: 1rem 1rem;
    align-self: center;
 
-   background: rgb(54, 54, 54);
+   background: $grey-color;
    border-radius: .4rem;
    // border: 1px solid white;
 
@@ -129,7 +129,7 @@ $max-width: 60rem;
 // When width < 60rem
 @media (max-width: 60rem) {
    .project-container {
-      grid-template-rows: 1.5rem minmax(auto, 14rem) 1.5rem;
+      grid-template-rows: 1rem minmax(auto, 14rem) 1.5rem;
       grid-template-columns: repeat(2, 50%);
    }
 }
@@ -141,7 +141,7 @@ $max-width: 60rem;
       margin: 0 auto;
    }
    .project-container {
-      grid-template-rows: 1.5rem repeat(2, minmax(auto, 14rem)) 4rem;
+      grid-template-rows: 1.5rem repeat(2, minmax(auto, 14rem)) 1rem;
       grid-template-columns: 100%;
    }
 }

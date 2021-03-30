@@ -4,9 +4,9 @@ export default function Projects() {
 
    return (
       <section className='section section-3'>
-         <div className='main-container'>
+         <div className='projects-container'>
             <div className='main-title section-title'>
-               <h2><strong>//&nbsp;&nbsp;</strong>Featured Works</h2>
+               <h2>Featured Works</h2>
             </div>
 
             <section className='project-container project1-container'>
