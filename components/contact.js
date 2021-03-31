@@ -6,12 +6,12 @@ export default function Contact() {
    const sendEmail = (e) => {
       e.preventDefault();
   
-      emailjs.sendForm('service_3cdiee4', 'template_57c2yfl', e.target, 'user_HeqlqbuQa4Ip0GvzY2pRO')
-         .then((result) => {
-            console.log(result.text);
-         }, (error) => {
-            console.log(error.text);
-         });
+      // emailjs.sendForm('service_3cdiee4', 'template_57c2yfl', e.target, 'user_HeqlqbuQa4Ip0GvzY2pRO')
+      //    .then((result) => {
+      //       console.log(result.text);
+      //    }, (error) => {
+      //       console.log(error.text);
+      //    });
       }
 
    return (
@@ -22,20 +22,31 @@ export default function Contact() {
             </div>
 
             <div className='contact-message'>
-               <h3>
-                  Send me a message and let's get talking!
-               </h3>
+               <div className='message-main'>
+                  <h3>Send me a message and let's get talking!</h3>
+               </div>
+               <div className='message-hidden'>
+                  <h3>Hidden Message</h3>
+               </div>
             </div>
             
-            <form className="contact-form" onSubmit={sendEmail}>
-               <input type="text" className='form-name' name="sender" placeholder='Name' autoComplete='off'/>
+            <form className="contact-form" onSubmit={sendEmail} autoComplete='off'>
+               <div className='form-item-container form-name'>
+                  <input type="text" name="sender" placeholder='Name'/>
+               </div>
 
-               <input type="text" className='form-email' name="senderEmail" placeholder='Email' autoComplete='off'/>
+               <div className='form-item-container form-email'>
+                  <input type="text" name="senderEmail" placeholder='Email'/>
+               </div>
+               
+               <div className='form-item-container form-subject'>
+                  <input type="text" name="subject" placeholder='Subject'/>
+               </div>
 
-               <input type="text" className='form-subject' name="subject" placeholder='Subject' autoComplete='off'/>
-
-               <input type='text' className='form-message' name="message" placeholder='Message' autoComplete='off'/>
-
+               <div className='form-item-container form-message'>
+                  <textarea name="message" placeholder='Message'/>
+               </div>
+               
                <input type="submit" className='form-submit' value="Send Message" />
             </form>
          </div>
