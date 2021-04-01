@@ -22,12 +22,7 @@ export default function Contact() {
             </div>
 
             <div className='contact-message'>
-               <div className='message-main'>
-                  <h3>Send me a message and let's get talking!</h3>
-               </div>
-               <div className='message-hidden'>
-                  <h3>Hidden Message</h3>
-               </div>
+               <h3>Send me a message and let's get talking!</h3>
             </div>
             
             <form className="contact-form" onSubmit={sendEmail} autoComplete='off'>

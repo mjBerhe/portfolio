@@ -2,6 +2,7 @@
 
 @import './general/fonts';
 @import './general/colors';
+@import './general/animations';
 
 @import './pages/dps';
 @import './pages/2slow';
@@ -11,17 +12,12 @@
 @import './components/skills';
 @import './components/contact';
 
-
-
 * {
    box-sizing: border-box;
    margin: 0;
    padding: 0;
    font-family: 'PT Sans', sans-serif;
 }
-
-$min-width: 22.5rem;
-$max-width: 60rem;
 
 // =====================================
 //

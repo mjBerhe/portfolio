@@ -11,7 +11,21 @@ export default function Header() {
                </Link>
             </div> */}
             <div className='header-title'>
-               <h1>Matthew Berhe</h1>
+               <div className='title-name'>
+                  <h1>M</h1>
+                  <h1>a</h1>
+                  <h1>t</h1>
+                  <h1>t</h1>
+                  <h1>h</h1>
+                  <h1>e</h1>
+                  <h1>w</h1>
+                  <h1>&nbsp;</h1>
+                  <div className='title-b'><h1>B</h1></div>
+                  <h1>e</h1>
+                  <h1>r</h1>
+                  <h1>h</h1>
+                  <h1>e</h1>
+               </div>
                <h3>WEB DEVELOPER</h3>
                {/* <h3><strong>//&nbsp;&nbsp;</strong>WEB DEVELOPER</h3> */}
                {/* <h3>I create functional & useful tools for the web.</h3> */}
