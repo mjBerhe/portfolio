@@ -145,12 +145,18 @@
 
    height: 3rem;
    width: 10rem;
-
    justify-self: end;
    align-self: start;
 
+   color: $secondary-color;
+   background: transparent;
+   font-size: 1rem;
+   border: 1px solid $secondary-color;
+}
+
+.form-submit:hover {
+   color: black;
    background: $secondary-color;
-   border: none;
 }
 
 .form-item-container {
@@ -213,6 +219,7 @@
    }
 }
 
+// When width < 30rem
 @media (max-width: 30rem) {
    .contact-form {
       padding: 3rem 1.5rem;
@@ -223,6 +230,7 @@
    grid-row: 4/5;
    grid-column: 1/2;
    padding-top: .3rem;
+   margin: 0 0.5rem;
 
    display: flex;
    flex-direction: column;

@@ -574,8 +574,8 @@ a, a:hover, a:active, a:focus {
   z-index: 1;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 20% 10% 50% minmax(2.5rem, 15%);
-      grid-template-rows: 20% 10% 50% minmax(2.5rem, 15%);
+  -ms-grid-rows: 20% 10% 53% minmax(2.5rem, 15%);
+      grid-template-rows: 20% 10% 53% minmax(2.5rem, 15%);
 }
 
 .project-title {
@@ -659,10 +659,13 @@ a, a:hover, a:active, a:focus {
     margin: 0 auto;
   }
   .project-container {
-    -ms-grid-rows: 1.5rem (minmax(auto, 14rem))[2] 1rem;
-        grid-template-rows: 1.5rem repeat(2, minmax(auto, 14rem)) 1rem;
+    -ms-grid-rows: 1.5rem (minmax(auto, 10rem))[2] 1rem;
+        grid-template-rows: 1.5rem repeat(2, minmax(auto, 10rem)) 1rem;
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
+  }
+  .project-preview-container {
+    padding-top: 1rem;
   }
 }
 
@@ -1607,8 +1610,15 @@ a, a:hover, a:active, a:focus {
   -ms-flex-item-align: start;
       -ms-grid-row-align: start;
       align-self: start;
+  color: rgba(102, 189, 211, 0.932);
+  background: transparent;
+  font-size: 1rem;
+  border: 1px solid rgba(102, 189, 211, 0.932);
+}
+
+.form-submit:hover {
+  color: black;
   background: rgba(102, 189, 211, 0.932);
-  border: none;
 }
 
 .form-item-container {
@@ -1707,6 +1717,7 @@ a, a:hover, a:active, a:focus {
   -ms-grid-column-span: 1;
   grid-column: 1/2;
   padding-top: .3rem;
+  margin: 0 0.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1780,6 +1791,11 @@ a, a:hover, a:active, a:focus {
   margin: 0;
   padding: 0;
   font-family: 'PT Sans', sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
 }
 
 .container {

@@ -42,7 +42,7 @@ export default function Contact() {
                   <textarea name="message" placeholder='Message'/>
                </div>
                
-               <input type="submit" className='form-submit' value="Send Message" />
+               <input type="submit" className='form-submit' value="Send Message"/>
             </form>
 
             <div className='footer-container'>

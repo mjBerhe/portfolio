@@ -46,7 +46,7 @@
    // align-self: center;
 
    display: grid;
-   grid-template-rows: 20% 10% 50% minmax(2.5rem, 15%);
+   grid-template-rows: 20% 10% 53% minmax(2.5rem, 15%);
 
    // border: 1px solid yellow;
 }
@@ -127,8 +127,11 @@
       margin: 0 auto;
    }
    .project-container {
-      grid-template-rows: 1.5rem repeat(2, minmax(auto, 14rem)) 1rem;
+      grid-template-rows: 1.5rem repeat(2, minmax(auto, 10rem)) 1rem;
       grid-template-columns: 100%;
+   }
+   .project-preview-container {
+      padding-top: 1rem;
    }
 }
 
@@ -136,6 +139,7 @@
 @media (max-width: 31rem) {
    .project-preview-container {
       width: 100%;
+      // align-self: center;
    }
 }
 
