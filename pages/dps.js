@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
+import Footer from '../components/footer';
 
 import FOG from 'vanta/dist/vanta.fog.min';
 
@@ -57,18 +58,26 @@ export default function Dps() {
                   <a><h4>Home</h4></a>
                </Link>
             </div>
+
             <div className='dps-title'>
                <h2>DPS Calculator</h2>
                <div className='dps-title-links'>
-                  <a href="https://osrsdps.com/" target="_blank">
-                     <img src="logos/Link_Logo.png" alt=""/>
-                  </a>
-                  <a href="https://github.com/mjBerhe/dps-calc" target="_blank">
-                     <img src="logos/Github_Logo.png" alt=""/>
-                  </a>
+                  <div className='footer-logo'>
+                     <img src="logos/Link2_Logo.png" alt="link logo"/>
+                     <a href="https://osrsdps.com/" className='footer-logo-overlay' target='blank'>
+                        <img src="logos/Link2_Logo2.png" alt="link logo blue"/>
+                     </a>
+                  </div>
+                  <div className='footer-logo'>
+                     <img src="logos/GitHub_Logo.png" alt="github logo"/>
+                     <a href="https://github.com/mjBerhe/dps-calc" className='footer-logo-overlay' target='blank'>
+                        <img src="logos/Github_Logo2.png" alt="github logo blue"/>
+                     </a>
+                  </div>
                </div>
             </div>
-            <div className='dps-screenshot'>
+
+            <div className='dps-images'>
                <Slider {...settings}>
                   <div>
                      <img src="screenshots/DPS_Calc2.png" alt="DPS Calculator screenshot"/>
@@ -84,8 +93,11 @@ export default function Dps() {
                   </div>
                </Slider>
             </div>
+
             <div className='dps-info dps-info-1'>
-               <h3><strong>//&nbsp;&nbsp;</strong>Motive</h3>
+               <div className='dps-subheader'>
+                  <h3>Motive</h3>
+               </div>
                <p>
                   <strong>DPS Calculator</strong> is a web-based visual tool meant to help users
                   make useful calculations for the popular online video game <i>Oldschool Runescape</i>.
@@ -100,23 +112,8 @@ export default function Dps() {
                   new players.
                </p>
             </div>
+
             <div className='dps-info dps-info-2'>
-               <h3><strong>//&nbsp;&nbsp;</strong>Process</h3>
-               <p>
-                  Differentiating between local state and global state was a main issue throughout the project.
-                  The useState hook proved to be very powerful and intuitive when working on a local component,
-                  however it became more tedious whenever I needed to transfer information between components.
-                  The library Zustand was a perfect fix providing a global state store to use between all components.
-               </p>
-               <p>
-                  I used MongoDB as a database to store every item in the game. My plan was to query the database when the web page loaded so that all items would be available. This led to a big problem where the initial loading time would be too long. This is when I transferred to Next.js as they provided a way to pre-render the whole page along with the database queries which reduced loading time significantly.
-               </p>
-               <p>
-                  Working on this project made me very comfortable working with React.js + Next.js for any of my front end needs. I also learned how useful a backend database tool such as MongoDB can be for future projects.
-               </p>
-            </div>
-            <div className='dps-info dps-info-3'>
-               {/* <h3><strong>//&nbsp;&nbsp;</strong>Technologies Used</h3> */}
                <div className='technology-items'>
                   <div className='technology-item'>
                      <a href="https://reactjs.org/" target='blank'>
@@ -145,6 +142,27 @@ export default function Dps() {
                   </div>
                </div>
             </div>
+
+            <div className='dps-info dps-info-3'>
+               <div className='dps-subheader'>
+                  <h3>Process</h3>
+               </div>
+               <p>
+                  Differentiating between local state and global state was a main issue throughout the project.
+                  The useState hook proved to be very powerful and intuitive when working on a local component,
+                  however it became more tedious whenever I needed to transfer information between components.
+                  The library Zustand was a perfect fix providing a global state store to use between all components.
+               </p>
+               <p>
+                  I used MongoDB as a database to store every item in the game. My plan was to query the database when the web page loaded so that all items would be available. This led to a big problem where the initial loading time would be too long. This is when I transferred to Next.js as they provided a way to pre-render the whole page along with the database queries which reduced loading time significantly.
+               </p>
+               <p>
+                  Working on this project made me very comfortable working with React.js + Next.js for any of my front end needs. I also learned how useful a backend database tool such as MongoDB can be for future projects.
+               </p>
+            </div>
+
+            <Footer className={'dps-footer'}/>
+            
          </div>
       </div>
    )

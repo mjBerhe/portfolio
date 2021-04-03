@@ -20,7 +20,8 @@ export default function Header() {
                   <h1>e</h1>
                   <h1>w</h1>
                   <h1>&nbsp;</h1>
-                  <div className='title-b'><h1>B</h1></div>
+                  {/* <div className='title-b'><h1>B</h1></div> */}
+                  <h1>B</h1>
                   <h1>e</h1>
                   <h1>r</h1>
                   <h1>h</h1>
