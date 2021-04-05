@@ -1,21 +1,21 @@
 // =====================================
 //
-//             DPS PROJECT
+//             PORTFOLIO PROJECT
 //
 // =====================================
 
-.dps-content-container {
+.portfolio-content-container {
    max-width: $max-width;
    margin: 0 auto;
 
    display: grid;
-   grid-template-rows: 5rem minmax(10rem, auto) 21rem repeat(6, auto);
+   grid-template-rows: 5rem minmax(10rem, auto) 18rem repeat(6, auto);
    grid-template-columns: minmax($min-width, 100%);
 
    // border: 2px solid yellow;
 }
 
-.dps-title {
+.portfolio-title {
    grid-row: 2/3;
    grid-column: 1/2;
    height: 100%;
@@ -31,7 +31,7 @@
    }
 }
 
-.dps-title-links {
+.portfolio-title-links {
    height: 100%;
 
    display: flex;
@@ -52,14 +52,14 @@
 
 // When width < 35rem
 @media (max-width: 35rem) {
-   .dps-title-links {
+   .portfolio-title-links {
       display: flex;
       flex-direction: column;
       justify-content: space-around;
    }
 }
 
-.dps-images {
+.portfolio-images {
    grid-row: 3/4;
    grid-column: 1/2;
    width: 32rem;
@@ -70,13 +70,14 @@
    img {
       width: 100%;
       max-height: 20rem;
+      border: 1px solid rgba(255, 255, 255, 0.048);
       border-radius: .5rem;
    }
 }
 
 // When width < 35rem
 @media (max-width: 35rem) {
-   .dps-images {
+   .portfolio-images {
       width: calc(100% - 2rem);
       img {
          height: auto;
@@ -84,7 +85,7 @@
    }
 }
 
-.dps-info {
+.portfolio-info {
    p {
       margin: 1rem 0;
       padding: 0 2rem;
@@ -95,7 +96,7 @@
    }
 }
 
-.dps-subheader {
+.portfolio-subheader {
    display: flex;
    padding: 1rem 1rem;
    h3 {
@@ -104,22 +105,22 @@
    }
 }
 
-.dps-info-1 {
+.portfolio-info-1 {
    grid-row: 4/5;
    grid-column: 1/2;
 }
 
-.dps-info-2 {
+.portfolio-info-2 {
    grid-row: 5/6;
    grid-column: 1/2;
 }
 
-.dps-info-3 {
+.portfolio-info-3 {
    grid-row: 6/7;
    grid-column: 1/2;
 }
 
-.dps-footer {
+.portfolio-footer {
    grid-row: 7/8;
    grid-column: 1/2;
 

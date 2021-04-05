@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-export default function Skills() {
+export default function Intro() {
 
    const [isFrontEnd, setIsFrontEnd] = useState({
       on: true,
@@ -68,22 +68,17 @@ export default function Skills() {
 
    return (
       <section className='section section-2'>
-         <div className='skills-container'>
+         <div className='intro-container'>
 
             <div className='about-me'>
                <h3>
-                  I am a self-taught developer from Toronto, Ontario that enjoys creating interactive
-                  & useful websites. I strive to continuously improve my work to create the best
-                  product possible.
+                  I am a self-taught developer from Toronto, Canada that enjoys creating interactive
+                  websites & making complicated information more accessible. I strive to create
+                  products that eliminate inconveniences for the better.
                </h3>
             </div>
 
-            {/* <div className='skills-title section-title'>
-               <h2><strong>//&nbsp;&nbsp;</strong>Technologies</h2>
-            </div> */}
-
             <div className='technolgies-container'>
-
                <div className='technologies-headings'>
                   <button onClick={handleFrontItems} className={isFrontEnd.class} >Front-End</button>
                   <button onClick={handleBackItems} className={isBackEnd.class}>Back-End</button>
@@ -170,6 +165,7 @@ export default function Skills() {
                      </div>
                   }
                </div>
+               
             </div>
          </div>
       </section>

@@ -36,8 +36,8 @@ export default function Projects() {
                </div>
                <div className='project-preview-container project1-preview-container'>
                   <img src="screenshots/DPS_Calc.png" alt="project1-preview"/>
-                  <a href="https://osrsdps.com/" target="_blank" className='project-preview-overlay project1-preview-overlay'>
-                     <h3 className='project1-preview-text'>Click Me</h3>
+                  <a href="https://osrsdps.com/" target="_blank" className='project-preview-overlay'>
+                     <h3 className='project1-preview-text'>Check Me Out!</h3>
                   </a>
                </div>
             </section>
@@ -46,7 +46,10 @@ export default function Projects() {
                <div className='project-info-container project2-info-container'>
                   <div className='project-title project2-title'>
                      <Link href='/2slow'>
-                        <a><h3>2Slow</h3></a>
+                        <a>
+                           <h3>2Slow</h3>
+                           <h5>BETA</h5>
+                        </a>
                      </Link>
                   </div>
                   <div className='project2-subtitle'>
@@ -69,8 +72,8 @@ export default function Projects() {
                </div>
                <div className='project-preview-container project2-preview-container'>
                   <img src="screenshots/2Slow_Screenshot.png" alt="project2-preview"/>
-                  <a href="https://osrsdps.com/" target="_blank" className='project2-preview-overlay'>
-                     <h3 className='project2-preview-text'>Click Me</h3>
+                  <a href="https://osrsdps.com/" target="_blank" className='project-preview-overlay'>
+                     <h3 className='project2-preview-text'>Click Me Please</h3>
                   </a>
                </div>
             </section>
@@ -101,9 +104,9 @@ export default function Projects() {
                   </div>
                </div>
                <div className='project-preview-container project3-preview-container'>
-                  <img src="screenshots/Portfolio_Screenshot.png" alt="project3-preview"/>
-                  <a href="https://osrsdps.com/" target="_blank" className='project3-preview-overlay'>
-                     <h3 className='project3-preview-text'>Click Me</h3>
+                  <img src="screenshots/Portfolio_1.png" alt="project3-preview"/>
+                  <a href="https://osrsdps.com/" target="_blank" className='project-preview-overlay'>
+                     <h3 className='project3-preview-text'>This Looks Familiar</h3>
                   </a>
                </div>
             </section>
