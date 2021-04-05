@@ -59,9 +59,9 @@ export default function Dps() {
                </Link>
             </div>
 
-            <div className='dps-title'>
+            <div className='page-title dps-title'>
                <h2>DPS Calculator</h2>
-               <div className='dps-title-links'>
+               <div className='page-title-links'>
                   <div className='footer-logo'>
                      <img src="logos/Link2_Logo.png" alt="link logo"/>
                      <a href="https://osrsdps.com/" className='footer-logo-overlay' target='blank'>
@@ -77,25 +77,25 @@ export default function Dps() {
                </div>
             </div>
 
-            <div className='dps-images'>
+            <div className='page-images dps-images'>
                <Slider {...settings}>
                   <div>
-                     <img src="screenshots/DPS_Calc2.png" alt="DPS Calculator screenshot"/>
+                     <img src="screenshots/DPS_Calc2.png" alt="DPS Calculator screenshot 1"/>
                   </div>
                   <div>
-                     <img src="screenshots/DPS_Stats.png" alt="DPS Calculator screenshot"/>
+                     <img src="screenshots/DPS_Stats.png" alt="DPS Calculator screenshot 2"/>
                   </div>
                   <div>
-                     <img src="screenshots/DPS_Comparison.png" alt="DPS Calculator screenshot"/>
+                     <img src="screenshots/DPS_Comparison.png" alt="DPS Calculator screenshot 3"/>
                   </div>
                   <div>
-                     <img src="screenshots/DPS_Equipment.png" alt="DPS Calculator screenshot"/>
+                     <img src="screenshots/DPS_Equipment.png" alt="DPS Calculator screenshot 4"/>
                   </div>
                </Slider>
             </div>
 
-            <div className='dps-info dps-info-1'>
-               <div className='dps-subheader'>
+            <div className='page-info dps-info-1'>
+               <div className='page-subheader'>
                   <h3>Motive</h3>
                </div>
                <p>
@@ -113,7 +113,7 @@ export default function Dps() {
                </p>
             </div>
 
-            <div className='dps-info dps-info-2'>
+            <div className='dps-info-2'>
                <div className='technology-items'>
                   <div className='technology-item'>
                      <a href="https://reactjs.org/" target='blank'>
@@ -143,9 +143,9 @@ export default function Dps() {
                </div>
             </div>
 
-            <div className='dps-info dps-info-3'>
-               <div className='dps-subheader'>
-                  <h3>Process</h3>
+            <div className='page-info dps-info-3'>
+               <div className='page-subheader'>
+                  <h3>Progression</h3>
                </div>
                <p>
                   Differentiating between local state and global state was a main issue throughout the project.
@@ -161,7 +161,7 @@ export default function Dps() {
                </p>
             </div>
 
-            <Footer className={'dps-footer'}/>
+            <Footer className={'page-footer'}/>
             
          </div>
       </div>

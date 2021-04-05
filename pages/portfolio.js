@@ -59,9 +59,9 @@ export default function Portfolio() {
                </Link>
             </div>
 
-            <div className='portfolio-title'>
+            <div className='page-title portfolio-title'>
                <h2>Portfolio</h2>
-               <div className='portfolio-title-links'>
+               <div className='page-title-links'>
                   <div className='footer-logo'>
                      <img src="logos/Link2_Logo.png" alt="link logo"/>
                      <a href="https://osrsdps.com/" className='footer-logo-overlay' target='blank'>
@@ -77,7 +77,7 @@ export default function Portfolio() {
                </div>
             </div>
 
-            <div className='portfolio-images'>
+            <div className='page-images portfolio-images'>
                <Slider {...settings}>
                   <div>
                      <img src="screenshots/Portfolio_1.png" alt="Portfolio screenshot"/>
@@ -94,8 +94,8 @@ export default function Portfolio() {
                </Slider>
             </div>
 
-            <div className='portfolio-info portfolio-info-1'>
-               <div className='portfolio-subheader'>
+            <div className='page-info portfolio-info-1'>
+               <div className='page-subheader'>
                   <h3>Motive</h3>
                </div>
                <p>
@@ -130,8 +130,8 @@ export default function Portfolio() {
                </div>
             </div>
 
-            <div className='portfolio-info portfolio-info-3'>
-               <div className='portfolio-subheader'>
+            <div className='page-info portfolio-info-3'>
+               <div className='page-subheader'>
                   <h3>Process</h3>
                </div>
                <p>
@@ -149,7 +149,7 @@ export default function Portfolio() {
                </p>
             </div>
 
-            <Footer className={'portfolio-footer'}/>
+            <Footer className={'page-footer'}/>
             
          </div>
       </div>

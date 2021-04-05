@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
+import Footer from '../components/footer';
 
 import FOG from 'vanta/dist/vanta.fog.min';
 
@@ -52,23 +53,32 @@ export default function TooSlow() {
          </Head>
 
          <div className='tooslow-content-container'>
+
             <div className='nav'>
                <Link href='/'>
                   <a><h4>Home</h4></a>
                </Link>
             </div>
-            <div className='tooslow-title'>
-               <h2><strong>//&nbsp;&nbsp;</strong>2Slow</h2>
-               <div className='tooslow-title-links'>
-                  <a href="http://tooslow.herokuapp.com/gamelobby" target="_blank">
-                     <img src="logos/Link_Logo.png" alt=""/>
-                  </a>
-                  <a href="https://github.com/mjBerhe/2S" target="_blank">
-                     <img src="logos/Github_Logo.png" alt=""/>
-                  </a>
+
+            <div className='page-title tooslow-title'>
+               <h2>2Slow</h2>
+               <div className='page-title-links'>
+                  <div className='footer-logo'>
+                     <img src="logos/Link2_Logo.png" alt="link logo"/>
+                     <a href="https://osrsdps.com/" className='footer-logo-overlay' target='blank'>
+                        <img src="logos/Link2_Logo2.png" alt="link logo blue"/>
+                     </a>
+                  </div>
+                  <div className='footer-logo'>
+                     <img src="logos/GitHub_Logo.png" alt="github logo"/>
+                     <a href="https://github.com/mjBerhe/dps-calc" className='footer-logo-overlay' target='blank'>
+                        <img src="logos/Github_Logo2.png" alt="github logo blue"/>
+                     </a>
+                  </div>
                </div>
             </div>
-            <div className='tooslow-screenshot'>
+
+            <div className='page-images tooslow-images'>
                <Slider {...settings}>
                   <div>
                      <img src="screenshots/2Slow_Screenshot.png" alt="2Slow screenshot"/>
@@ -84,8 +94,11 @@ export default function TooSlow() {
                   </div>
                </Slider>
             </div>
-            <div className='tooslow-info tooslow-info-1'>
-               <h3><strong>//&nbsp;&nbsp;</strong>Motive</h3>
+
+            <div className='page-info tooslow-info-1'>
+               <div className='page-subheader'>
+                  <h3>Motive</h3>
+               </div>
                <p>
                   As someone who loved math growing up, I never had many opportunities to see how I matched up
                   against others. The goal with <strong>2Slow</strong> was to create an online platform where people can put
@@ -100,12 +113,8 @@ export default function TooSlow() {
                   new players.
                </p>
             </div>
-            <div className='tooslow-info tooslow-info-2'>
-               <h3><strong>//&nbsp;&nbsp;</strong>Process</h3>
-               <p>
-               </p>
-            </div>
-            <div className='tooslow-info tooslow-info-3'>
+
+            <div className='tooslow-info-2'>
                {/* <h3><strong>//&nbsp;&nbsp;</strong>Technologies Used</h3> */}
                <div className='technology-items'>
                   <div className='technology-item'>
@@ -140,6 +149,31 @@ export default function TooSlow() {
                   </div>
                </div>
             </div>
+
+            <div className='page-info tooslow-info-3'>
+               <div className='page-subheader'>
+                  <h3>Progression</h3>
+               </div>
+               <p>
+                  When I started to think how 2Slow would work, I wanted a system where users
+                  could interact with each other in near instant time. If users would face off
+                  against others online, I wanted the experience to feel interactive and
+                  seamless. This is when I found out about Socket.io.
+               </p>
+               <p>
+                  Socket.io is a tool that enables “real-time, bi-directional and event-based
+                  communication”. This was a perfect find for the system I had in mind. Working
+                  with Socket.io allowed me to create a functional “room” where users could
+                  join and chat.
+               </p>
+               <p>
+                  I was also able to develop the structure of how a game would operate using
+                  event based communication. Socket.io is a very powerful tool and I want
+                  to explore other areas where it can be used.
+               </p>
+            </div>
+
+            <Footer className={'page-footer tooslow-footer'}/>
          </div>
       </div>
    )

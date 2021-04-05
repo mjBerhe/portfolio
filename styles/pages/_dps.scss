@@ -18,90 +18,11 @@
 .dps-title {
    grid-row: 2/3;
    grid-column: 1/2;
-   height: 100%;
-   padding: 2rem 1rem;
-
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-
-   // border: 1px solid white;
-   h2 strong {
-      color: $secondary-color;
-   }
-}
-
-.dps-title-links {
-   height: 100%;
-
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-
-   // border: 1px solid yellow;
-   a {
-      outline: none;
-   }
-   div {
-      width: 2rem;
-      margin-left: 2rem;
-      display: flex;
-      align-items: center;
-   }
-}
-
-// When width < 35rem
-@media (max-width: 35rem) {
-   .dps-title-links {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-   }
 }
 
 .dps-images {
    grid-row: 3/4;
    grid-column: 1/2;
-   width: 32rem;
-   padding: 1rem;
-
-   justify-self: center;
-   align-self: center;
-   img {
-      width: 100%;
-      max-height: 20rem;
-      border-radius: .5rem;
-   }
-}
-
-// When width < 35rem
-@media (max-width: 35rem) {
-   .dps-images {
-      width: calc(100% - 2rem);
-      img {
-         height: auto;
-      }
-   }
-}
-
-.dps-info {
-   p {
-      margin: 1rem 0;
-      padding: 0 2rem;
-      strong {
-         font-weight: bold;
-         color: white;
-      }
-   }
-}
-
-.dps-subheader {
-   display: flex;
-   padding: 1rem 1rem;
-   h3 {
-      font-size: 2.75rem;
-      border-bottom: 2px solid $secondary-color;
-   }
 }
 
 .dps-info-1 {
@@ -122,6 +43,4 @@
 .dps-footer {
    grid-row: 7/8;
    grid-column: 1/2;
-
-   margin: 10rem 0.5rem 0 0.5rem;
 }
