@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import Head from 'next/head';
-import Link from 'next/link';
+import Nav from '../components/nav';
 import Footer from '../components/footer';
 
 import FOG from 'vanta/dist/vanta.fog.min';
@@ -54,18 +54,7 @@ export default function Dps() {
 
          <div className='dps-content-container'>
             
-            <div className='nav'>
-               <Link href='/'>
-                  <a>
-                     <img src="logos/Berhe_Logo2.PNG" alt=""/>
-                  </a>
-               </Link>
-               <Link href='/contactPage'>
-                  <a className='contact-link'>
-                     <h4>Contact Me</h4>
-                  </a>
-               </Link>
-            </div>
+            <Nav/>
 
             <div className='page-title dps-title'>
                <h2>DPS Calculator</h2>
@@ -77,7 +66,7 @@ export default function Dps() {
                      </a>
                   </div>
                   <div className='footer-logo'>
-                     <img src="logos/GitHub_Logo.png" alt="github logo"/>
+                     <img src="logos/Github_Logo.png" alt="github logo"/>
                      <a href="https://github.com/mjBerhe/dps-calc" className='footer-logo-overlay' target='blank'>
                         <img src="logos/Github_Logo2.png" alt="github logo blue"/>
                      </a>

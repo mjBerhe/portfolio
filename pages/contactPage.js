@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import Head from 'next/head';
-import Link from 'next/link';
+import Nav from '../components/nav';
 import Footer from '../components/footer';
 
 import FOG from 'vanta/dist/vanta.fog.min';
@@ -52,18 +52,7 @@ export default function ContactPage() {
 
          <div className='contactPage-container'>
 
-            <div className='nav'>
-               <Link href='/'>
-                  <a>
-                     <img src="logos/Berhe_Logo2.PNG" alt=""/>
-                  </a>
-               </Link>
-               <Link href='/contactPage'>
-                  <a className='contact-link'>
-                     <h4>Contact Me</h4>
-                  </a>
-               </Link>
-            </div>
+            <Nav/>
 
             <div className='contact-title section-title'>
                <h2>Contact Me</h2>
