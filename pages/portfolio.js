@@ -64,13 +64,13 @@ export default function Portfolio() {
                <div className='page-title-links'>
                   <div className='footer-logo'>
                      <img src="logos/Link2_Logo.png" alt="link logo"/>
-                     <a href="https://osrsdps.com/" className='footer-logo-overlay' target='blank'>
+                     <a href="https://portfolio-hymc202xo-berhe.vercel.app/" className='footer-logo-overlay' target='blank'>
                         <img src="logos/Link2_Logo2.png" alt="link logo blue"/>
                      </a>
                   </div>
                   <div className='footer-logo'>
                      <img src="logos/GitHub_Logo.png" alt="github logo"/>
-                     <a href="https://github.com/mjBerhe/dps-calc" className='footer-logo-overlay' target='blank'>
+                     <a href="https://github.com/mjBerhe/portfolio" className='footer-logo-overlay' target='blank'>
                         <img src="logos/Github_Logo2.png" alt="github logo blue"/>
                      </a>
                   </div>
@@ -100,8 +100,9 @@ export default function Portfolio() {
                </div>
                <p>
                   I was very excited when brainstorming for my web portfolio as I had many ideas I wanted to
-                   experiment with. I took plenty of consideration into the presentation as I believe the showcasing
-                  aspect is as valuable as the work itself. 
+                  experiment with. I took plenty of consideration into the presentation as I believe the showcasing
+                  aspect is as valuable as the work itself. My goal was to display my featured projects in a way
+                  that is both informative and enjoyable.
                </p>
             </div>
 
@@ -141,11 +142,11 @@ export default function Portfolio() {
                   Javascript libraries and I plan to continue using them for future projects.
                </p>
                <p>
-                  CSS took a significant portion of time with my portfolio, however this was very
+                  CSS took a significant portion of time with my portfolio. It proved to be very
                   valuable as I learned many new tricks and strategies. Prioritizing responsive
                   design from the beginning was critical and I plan to have a similar approach
                   with all my future projects. I was also able to learn more about animations
-                  and was happy with the role they played on this project.
+                  and was very satisfied with how they enhanced the user experience.
                </p>
             </div>
 

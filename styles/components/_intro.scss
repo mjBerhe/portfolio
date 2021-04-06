@@ -17,7 +17,7 @@
    margin: 0 auto;
    
    display: grid;
-   grid-template-rows: 50vh auto minmax(auto, 1fr);
+   grid-template-rows: minmax(50vh, auto) auto minmax(auto, 1fr);
    grid-template-columns: minmax($min-width, $max-width);
 
    // border: 1px solid white;
@@ -40,7 +40,10 @@
 
 @media (max-width: 30rem) {
    .about-me {
-      padding: 1rem 2rem;
+      padding: 1rem 3rem;
+      h3 {
+         font-size: 1.5rem;
+      }
    }
 }
 
@@ -64,7 +67,6 @@
    display: flex;
    justify-content: center;
    align-items: center;
-   // gap: 0 1rem;
 
    // border: 1px solid yellow;
 }

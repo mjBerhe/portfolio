@@ -23,11 +23,17 @@ export default function Projects() {
                      <h4>A user friendly visual tool to help compare in-game scenarios to optimize performance</h4>
                   </div>
                   <div className='project-tools project1-tools'>
-                     <h4>React.js</h4>
-                     <h4>Node.js</h4>
-                     <h4>MongoDB</h4>
+                     <a href="https://reactjs.org/" target='blank'>
+                        <h4>React.js</h4>
+                     </a>
+                     <a href="https://nodejs.org/en/" target='blank'>
+                        <h4>Node.js</h4>
+                     </a>  
+                     <a href="https://www.mongodb.com/" target='blank'>
+                        <h4>MongoDB</h4>
+                     </a>
                      <div className='footer-logo'>
-                        <img src="logos/GitHub_Logo.png" alt="github logo"/>
+                        <img src="logos/Github_Logo.png" alt="github logo"/>
                         <a href="https://github.com/mjBerhe/dps-calc" className='footer-logo-overlay' target='blank'>
                            <img src="logos/Github_Logo2.png" alt="github logo blue"/>
                         </a>
@@ -56,18 +62,24 @@ export default function Projects() {
                      <h5>Competitive Math Game</h5>
                   </div>
                   <div className='project-description project2-description'>
-                     <h4>A user friendly visual tool to help compare in-game scenarios to optimize performance</h4>
+                     <h4>Fast-paced competitive math game where speed and accuracy decide the victor</h4>
                   </div>
                   <div className='project-tools project2-tools'>
                      <div className='footer-logo'>
-                        <img src="logos/GitHub_Logo.png" alt="github logo"/>
+                        <img src="logos/Github_Logo.png" alt="github logo"/>
                         <a href="https://github.com/mjBerhe/2S" className='footer-logo-overlay' target='blank'>
                            <img src="logos/Github_Logo2.png" alt="github logo blue"/>
                         </a>
                      </div>
-                     <h4>Socket.io</h4>
-                     <h4>React.js</h4>
-                     <h4>Node.js</h4>
+                     <a href="https://socket.io/" target='blank'>
+                        <h4>Socket.io</h4>
+                     </a> 
+                     <a href="https://reactjs.org/" target='blank'>
+                        <h4>React.js</h4>
+                     </a>
+                     <a href="https://nodejs.org/en/" target='blank'>
+                        <h4>Node.js</h4>
+                     </a>  
                   </div>
                </div>
                <div className='project-preview-container project2-preview-container'>
@@ -82,21 +94,21 @@ export default function Projects() {
                <div className='project-info-container project3-info-container'>
                   <div className='project-title project3-title'>
                      <Link href='/portfolio'>
-                        <a><h3>Web Portfolio</h3></a>
+                        <a><h3>Portfolio</h3></a>
                      </Link>
                   </div>
                   <div className='project3-subtitle'>
                      <h5>Personal Website</h5>
                   </div>
                   <div className='project-description project3-description'>
-                     <h4>A user friendly visual tool to help compare in-game scenarios to optimize performance</h4>
+                     <h4>Web-based portfolio to showcase featured projects and skills</h4>
                   </div>
                   <div className='project-tools project3-tools'>
                      <h4>React.js</h4>
                      <h4>Next.js</h4>
                      <h4>SASS</h4>
                      <div className='footer-logo'>
-                        <img src="logos/GitHub_Logo.png" alt="github logo"/>
+                        <img src="logos/Github_Logo.png" alt="github logo"/>
                         <a href="https://github.com/mjBerhe/portfolio" className='footer-logo-overlay' target='blank'>
                            <img src="logos/Github_Logo2.png" alt="github logo blue"/>
                         </a>
@@ -105,7 +117,7 @@ export default function Projects() {
                </div>
                <div className='project-preview-container project3-preview-container'>
                   <img src="screenshots/Portfolio_1.png" alt="project3-preview"/>
-                  <a href="https://osrsdps.com/" target="_blank" className='project-preview-overlay'>
+                  <a href="https://portfolio-hymc202xo-berhe.vercel.app/" target="_blank" className='project-preview-overlay'>
                      <h3 className='project3-preview-text'>This Looks Familiar</h3>
                   </a>
                </div>

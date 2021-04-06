@@ -2,14 +2,22 @@ import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 
 export default function Header() {
+
    return (
       <section className='section section-1'>
          <div className='header-container'>
-            {/* <div className='nav'>
+            <div className='nav'>
                <Link href='/'>
-                  <a><h4>Home</h4></a>
+                  <a>
+                     <img src="logos/Berhe_Logo2.PNG" alt=""/>
+                  </a>
                </Link>
-            </div> */}
+               <button>
+                  Contact Me
+               </button>
+               
+            </div>
+
             <div className='header-title'>
                <div className='title-name'>
                   <h1>M</h1>
@@ -28,9 +36,8 @@ export default function Header() {
                   <h1>e</h1>
                </div>
                <h3>WEB DEVELOPER</h3>
-               {/* <h3><strong>//&nbsp;&nbsp;</strong>WEB DEVELOPER</h3> */}
-               {/* <h3>I create functional & useful tools for the web.</h3> */}
-            </div> 
+            </div>
+
          </div>
       </section>
    )

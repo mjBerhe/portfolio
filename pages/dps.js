@@ -55,7 +55,9 @@ export default function Dps() {
          <div className='dps-content-container'>
             <div className='nav'>
                <Link href='/'>
-                  <a><h4>Home</h4></a>
+                  <a>
+                     <img src="logos/Berhe_Logo2.PNG" alt=""/>
+                  </a>
                </Link>
             </div>
 
@@ -80,16 +82,16 @@ export default function Dps() {
             <div className='page-images dps-images'>
                <Slider {...settings}>
                   <div>
-                     <img src="screenshots/DPS_Calc2.png" alt="DPS Calculator screenshot 1"/>
+                     <img src="screenshots/DPS_Calc2.PNG" alt="DPS Calculator screenshot 1"/>
                   </div>
                   <div>
-                     <img src="screenshots/DPS_Stats.png" alt="DPS Calculator screenshot 2"/>
+                     <img src="screenshots/DPS_Stats.PNG" alt="DPS Calculator screenshot 2"/>
                   </div>
                   <div>
-                     <img src="screenshots/DPS_Comparison.png" alt="DPS Calculator screenshot 3"/>
+                     <img src="screenshots/DPS_Comparison.PNG" alt="DPS Calculator screenshot 3"/>
                   </div>
                   <div>
-                     <img src="screenshots/DPS_Equipment.png" alt="DPS Calculator screenshot 4"/>
+                     <img src="screenshots/DPS_Equipment.PNG" alt="DPS Calculator screenshot 4"/>
                   </div>
                </Slider>
             </div>
@@ -107,7 +109,7 @@ export default function Dps() {
                </p>
                <p>
                   My goal when creating this tool was to make something both easily accessible for all types of
-                  players, yet still detailed and concise where all aspects of the game are covered. A similar
+                  players, yet still detailed and concise where many aspects of the game are covered. A similar
                   tool already existed, however it was a spreadsheet and I felt it was too overwhelming for
                   new players.
                </p>
@@ -148,7 +150,7 @@ export default function Dps() {
                   <h3>Progression</h3>
                </div>
                <p>
-                  Differentiating between local state and global state was a main issue throughout the project.
+                  Differentiating between local and global state was a main issue throughout the project.
                   The useState hook proved to be very powerful and intuitive when working on a local component,
                   however it became more tedious whenever I needed to transfer information between components.
                   The library Zustand was a perfect fix providing a global state store to use between all components.

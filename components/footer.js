@@ -6,7 +6,7 @@ export default function Footer({ className }) {
       <div className={classState}>
          <div className='footer-logo-container'>
             <div className='footer-logo'>
-               <img src="logos/GitHub_Logo.png" alt="github logo"/>
+               <img src="logos/Github_Logo.png" alt="github logo"/>
                <a href="https://github.com/mjBerhe" className='footer-logo-overlay' target='blank'>
                   <img src="logos/Github_Logo2.png" alt="github logo blue"/>
                </a>

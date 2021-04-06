@@ -81,16 +81,10 @@ export default function TooSlow() {
             <div className='page-images tooslow-images'>
                <Slider {...settings}>
                   <div>
-                     <img src="screenshots/2Slow_Screenshot.png" alt="2Slow screenshot"/>
+                     <img src="screenshots/2Slow_Screenshot.png" alt="2Slow screenshot 1"/>
                   </div>
                   <div>
-                     <img src="screenshots/DPS_Stats.png" alt="DPS Calculator screenshot"/>
-                  </div>
-                  <div>
-                     <img src="screenshots/DPS_Comparison.png" alt="DPS Calculator screenshot"/>
-                  </div>
-                  <div>
-                     <img src="screenshots/DPS_Equipment.png" alt="DPS Calculator screenshot"/>
+                     <img src="screenshots/2Slow_2.PNG" alt="2Slow screenshot 2"/>
                   </div>
                </Slider>
             </div>
@@ -107,10 +101,9 @@ export default function TooSlow() {
                   key to winning. 
                </p>
                <p>
-                  My goal when creating this tool was to make something both easily accessible for all types of
-                  players, yet still detailed and concise where all aspects of the game are covered. A similar
-                  tool already existed, however it was a spreadsheet and I felt it was too overwhelming for
-                  new players.
+                  Accessibility was very important to keep in mind, as I wanted all age groups to compete.
+                  The game is designed to be simple enough for anyone to engage with, yet still has room
+                  for people to distinguish themselves.
                </p>
             </div>
 
@@ -156,8 +149,8 @@ export default function TooSlow() {
                </div>
                <p>
                   When I started to think how 2Slow would work, I wanted a system where users
-                  could interact with each other in near instant time. If users would face off
-                  against others online, I wanted the experience to feel interactive and
+                  could interact with each other in near instant time. If users would play against
+                  each other online, I wanted the experience to feel 
                   seamless. This is when I found out about Socket.io.
                </p>
                <p>

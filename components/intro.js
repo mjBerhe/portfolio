@@ -73,14 +73,14 @@ export default function Intro() {
             <div className='about-me'>
                <h3>
                   I am a self-taught developer from Toronto, Canada that enjoys creating interactive
-                  websites & making complicated information more accessible. I strive to create
-                  products that eliminate inconveniences for the better.
+                  websites & making complicated information more accessible. I appreciate products
+                  that eliminate inconveniences.
                </h3>
             </div>
 
             <div className='technolgies-container'>
                <div className='technologies-headings'>
-                  <button onClick={handleFrontItems} className={isFrontEnd.class} >Front-End</button>
+                  <button onClick={handleFrontItems} className={isFrontEnd.class}>Front-End</button>
                   <button onClick={handleBackItems} className={isBackEnd.class}>Back-End</button>
                   <button onClick={handleDeployment} className={isDeployment.class}>Deployment</button>
                </div>
