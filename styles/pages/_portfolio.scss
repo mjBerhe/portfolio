@@ -9,10 +9,17 @@
    margin: 0 auto;
 
    display: grid;
-   grid-template-rows: 5rem minmax(10rem, auto) 18rem repeat(6, auto);
+   grid-template-rows: 5rem minmax(auto, 9rem) 17rem repeat(6, auto);
    grid-template-columns: minmax($min-width, 100%);
 
    // border: 2px solid yellow;
+}
+
+// When width < 30rem
+@media (max-width: 30rem) {
+   .portfolio-content-container {
+      grid-template-rows: 5rem minmax(auto, 9rem) 14rem repeat(6, auto);
+   }
 }
 
 .portfolio-title {

@@ -263,8 +263,8 @@
    justify-content: flex-end;
 
    // border: 1px solid white;
-   a + * {
-      margin-left: 1rem;
+   a > h4 {
+      margin-right: 1rem;
    }
 }
 
@@ -377,8 +377,8 @@
    justify-content: flex-start;
 
    // border: 1px solid white;
-   * + a {
-      margin-right: 1rem;
+   a > h4 {
+      margin-left: 1rem;
    }
 }
 
@@ -485,8 +485,8 @@
    justify-content: flex-end;
 
    // border: 1px solid white;
-   h4 + * {
-      margin-left: 1rem;
+   a > h4 {
+      margin-right: 1rem;
    }
 }
 

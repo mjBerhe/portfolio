@@ -6,18 +6,6 @@ export default function Header() {
    return (
       <section className='section section-1'>
          <div className='header-container'>
-            <div className='nav'>
-               <Link href='/'>
-                  <a>
-                     <img src="logos/Berhe_Logo2.PNG" alt=""/>
-                  </a>
-               </Link>
-               <button>
-                  Contact Me
-               </button>
-               
-            </div>
-
             <div className='header-title'>
                <div className='title-name'>
                   <h1>M</h1>
@@ -37,7 +25,6 @@ export default function Header() {
                </div>
                <h3>WEB DEVELOPER</h3>
             </div>
-
          </div>
       </section>
    )

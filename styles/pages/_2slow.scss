@@ -9,15 +9,30 @@
    margin: 0 auto;
 
    display: grid;
-   grid-template-rows: 5rem minmax(10rem, auto) 20rem repeat(6, auto);
-   grid-template-columns: minmax($min-width, 100%);
+   grid-template-rows: 5rem minmax(auto, 9rem) 20rem repeat(6, auto);
+   grid-template-columns: minmax($min-width, $max-width);
 
    // border: 2px solid yellow;
+}
+
+// When width < 30rem
+@media (max-width: 30rem) {
+   .tooslow-content-container {
+      grid-template-rows: 5rem minmax(auto, 9rem) 16rem repeat(6, auto);
+   }
 }
 
 .tooslow-title {
    grid-row: 2/3;
    grid-column: 1/2;
+}
+
+.tooslow-title-area {
+   display: flex;
+   h4 {
+      margin-left: 1rem;
+      color: $secondary-color;
+   }
 }
 
 .tooslow-images {

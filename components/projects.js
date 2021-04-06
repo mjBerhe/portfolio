@@ -104,9 +104,15 @@ export default function Projects() {
                      <h4>Web-based portfolio to showcase featured projects and skills</h4>
                   </div>
                   <div className='project-tools project3-tools'>
-                     <h4>React.js</h4>
-                     <h4>Next.js</h4>
-                     <h4>SASS</h4>
+                     <a href="https://reactjs.org/" target='blank'>
+                        <h4>React.js</h4>
+                     </a>
+                     <a href="https://nextjs.org/" target='blank'>
+                        <h4>Next.js</h4>
+                     </a>
+                     <a href="https://sass-lang.com/" target='blank'>
+                        <h4>SASS</h4>
+                     </a>
                      <div className='footer-logo'>
                         <img src="logos/Github_Logo.png" alt="github logo"/>
                         <a href="https://github.com/mjBerhe/portfolio" className='footer-logo-overlay' target='blank'>

@@ -53,9 +53,17 @@ export default function Portfolio() {
          </Head>
 
          <div className='portfolio-content-container'>
+
             <div className='nav'>
                <Link href='/'>
-                  <a><h4>Home</h4></a>
+                  <a>
+                     <img src="logos/Berhe_Logo2.PNG" alt=""/>
+                  </a>
+               </Link>
+               <Link href='/contactPage'>
+                  <a className='contact-link'>
+                     <h4>Contact Me</h4>
+                  </a>
                </Link>
             </div>
 
@@ -63,9 +71,9 @@ export default function Portfolio() {
                <h2>Portfolio</h2>
                <div className='page-title-links'>
                   <div className='footer-logo'>
-                     <img src="logos/Link2_Logo.png" alt="link logo"/>
+                     <img src="logos/Link3_Logo.png" alt="link logo"/>
                      <a href="https://portfolio-hymc202xo-berhe.vercel.app/" className='footer-logo-overlay' target='blank'>
-                        <img src="logos/Link2_Logo2.png" alt="link logo blue"/>
+                        <img src="logos/Link3_Logo2.png" alt="link logo blue"/>
                      </a>
                   </div>
                   <div className='footer-logo'>

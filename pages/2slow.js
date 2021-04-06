@@ -56,17 +56,27 @@ export default function TooSlow() {
 
             <div className='nav'>
                <Link href='/'>
-                  <a><h4>Home</h4></a>
+                  <a>
+                     <img src="logos/Berhe_Logo2.PNG" alt=""/>
+                  </a>
+               </Link>
+               <Link href='/contactPage'>
+                  <a className='contact-link'>
+                     <h4>Contact Me</h4>
+                  </a>
                </Link>
             </div>
 
             <div className='page-title tooslow-title'>
-               <h2>2Slow</h2>
+               <div className='tooslow-title-area'>
+                  <h2>2Slow</h2>
+                  <h4>BETA</h4>
+               </div>
                <div className='page-title-links'>
                   <div className='footer-logo'>
-                     <img src="logos/Link2_Logo.png" alt="link logo"/>
+                     <img src="logos/Link3_Logo.png" alt="link logo"/>
                      <a href="https://osrsdps.com/" className='footer-logo-overlay' target='blank'>
-                        <img src="logos/Link2_Logo2.png" alt="link logo blue"/>
+                        <img src="logos/Link3_Logo2.png" alt="link logo blue"/>
                      </a>
                   </div>
                   <div className='footer-logo'>

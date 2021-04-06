@@ -6,17 +6,17 @@ export default function Contact() {
    const sendEmail = (e) => {
       e.preventDefault();
   
-      // emailjs.sendForm('service_3cdiee4', 'template_57c2yfl', e.target, 'user_HeqlqbuQa4Ip0GvzY2pRO')
-      //    .then((result) => {
-      //       console.log(result.text);
-      //    }, (error) => {
-      //       console.log(error.text);
-      //    });
-      }
+      emailjs.sendForm('service_3cdiee4', 'template_57c2yfl', e.target, 'user_HeqlqbuQa4Ip0GvzY2pRO')
+         .then((result) => {
+            console.log(result.text);
+         }, (error) => {
+            console.log(error.text);
+         });
+   }
 
    return (
       <section className='section section-4'>
-         <div className='contact-container' id='contact'>
+         <div className='contact-container'>
             <div className='contact-title section-title'>
                <h2>Contact Me</h2>
             </div>
