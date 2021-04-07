@@ -83,7 +83,7 @@ export default function TooSlow() {
                      <img src="screenshots/2Slow_Screenshot.png" alt="2Slow screenshot 1"/>
                   </div>
                   <div>
-                     <img src="screenshots/2Slow_2.PNG" alt="2Slow screenshot 2"/>
+                     <img src="screenshots/2Slow_2.png" alt="2Slow screenshot 2"/>
                   </div>
                </Slider>
             </div>

@@ -30,7 +30,7 @@ export default function Contact() {
                   <input type="text" name="sender" placeholder='Name'/>
                </div>
 
-               <div className='form-item-container form-email'>
+               <div className='form-item-container form-email' autoComplete='off'>
                   <input type="text" name="senderEmail" placeholder='Email'/>
                </div>
                

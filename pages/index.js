@@ -40,7 +40,7 @@ export default function Homepage() {
       <div className='container'>
          <Head>
             <title>Matthew Berhe</title>
-            <link rel="icon" type="image/png" href="logos/Berhe_Logo3.PNG" />
+            <link rel="icon" type="image/png" href="logos/Berhe_Logo3.png" />
             <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
          </Head>
 
