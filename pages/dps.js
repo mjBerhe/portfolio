@@ -147,10 +147,10 @@ export default function Dps() {
                </div>
                <p>
                   Differentiating between local and global state was a main issue throughout the project.
-                  The <a href='https://reactjs.org/docs/hooks-state.html' target='_blank'>useState</a>
+                  The <a href='https://reactjs.org/docs/hooks-state.html' target='_blank'>useState </a>
                   hook proved to be very powerful and intuitive when working on a local component,
                   however it became more tedious whenever I needed to transfer information between components.
-                  The library <a href='https://github.com/pmndrs/zustand' target='_blank'>Zustand</a>
+                  The library <a href='https://github.com/pmndrs/zustand' target='_blank'>Zustand </a>
                   was a perfect fix providing a global state store to use between all components.
                </p>
                <p>
