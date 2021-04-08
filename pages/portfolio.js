@@ -48,7 +48,8 @@ export default function Portfolio() {
    return (
       <div className='container' ref={myRef}>
          <Head>
-            <title>Matthew Berhe</title>
+            <title>Portfolio</title>
+            <link rel="icon" type="image/png" href="logos/Berhe_Logo3.png" />
             <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
          </Head>
 
@@ -96,10 +97,8 @@ export default function Portfolio() {
                   <h3>Motive</h3>
                </div>
                <p>
-                  I was very excited when brainstorming for my web portfolio as I had many ideas I wanted to
-                  experiment with. I took plenty of consideration into the presentation as I believe the showcasing
-                  aspect is as valuable as the work itself. My goal was to display my featured projects in a way
-                  that is both informative and enjoyable.
+                  My goal was to display my featured projects in a way that is both informative
+                  and enjoyable, as I believe the showcasing aspect is as valuable as the work itself.
                </p>
             </div>
 
@@ -137,6 +136,14 @@ export default function Portfolio() {
                   I’ve wanted to implement on a website. Although I enjoy learning new ideas, I find
                   it pointless to reinvent existing functional tools. I had a chance to use several
                   Javascript libraries and I plan to continue using them for future projects.
+               </p>
+               <p>
+                  <a href='https://alvarotrigo.com/fullPage/' target='_blank'>Fullpage.js</a> provided the functionality to scroll one full page at a time. My title
+                  page didn’t have its initial look when you would scroll down, so I wanted the first
+                  scroll to move all the way down to the next section. Fullpage.js provided the
+                  solution and I used this scroll design throughout the website. <a href='https://kenwheeler.github.io/slick/' target='_blank'>Slick</a> allowed me
+                  to display my images in a carousel type format. I found this very appealing
+                  and I plan to use this for future projects.
                </p>
                <p>
                   CSS took a significant portion of time with my portfolio. It proved to be very

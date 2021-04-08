@@ -48,7 +48,8 @@ export default function TooSlow() {
    return (
       <div className='container' ref={myRef}>
          <Head>
-            <title>Matthew Berhe</title>
+            <title>2Slow</title>
+            <link rel="icon" type="image/png" href="logos/Berhe_Logo3.png" />
             <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
          </Head>
 
@@ -64,13 +65,13 @@ export default function TooSlow() {
                <div className='page-title-links'>
                   <div className='footer-logo'>
                      <img src="logos/Link3_Logo.png" alt="link logo"/>
-                     <a href="https://osrsdps.com/" className='footer-logo-overlay' target='blank'>
+                     <a href="" className='footer-logo-overlay' target='blank'>
                         <img src="logos/Link3_Logo2.png" alt="link logo blue"/>
                      </a>
                   </div>
                   <div className='footer-logo'>
                      <img src="logos/Github_Logo.png" alt="github logo"/>
-                     <a href="https://github.com/mjBerhe/dps-calc" className='footer-logo-overlay' target='blank'>
+                     <a href="https://github.com/mjBerhe/2S" className='footer-logo-overlay' target='blank'>
                         <img src="logos/Github_Logo2.png" alt="github logo blue"/>
                      </a>
                   </div>
@@ -150,7 +151,7 @@ export default function TooSlow() {
                   When I started to think how 2Slow would work, I wanted a system where users
                   could interact with each other in near instant time. If users would play against
                   each other online, I wanted the experience to feel 
-                  seamless. This is when I found out about Socket.io.
+                  seamless. This is when I found out about <a href="https://socket.io/" target='_blank'>Socket.io</a>.
                </p>
                <p>
                   Socket.io is a tool that enables “real-time, bi-directional and event-based

@@ -83,6 +83,13 @@
          font-weight: bold;
          color: white;
       }
+      a {
+         color: $secondary-color;
+      }
+      a, a:active, a:focus, a:hover {
+         text-decoration: none;
+         outline: none;
+      }
    }
 }
 

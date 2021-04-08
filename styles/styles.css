@@ -221,6 +221,15 @@ a, a:hover, a:active, a:focus {
   color: white;
 }
 
+.page-info p a {
+  color: rgba(102, 189, 211, 0.932);
+}
+
+.page-info p a, .page-info p a:active, .page-info p a:focus, .page-info p a:hover {
+  text-decoration: none;
+  outline: none;
+}
+
 .page-subheader {
   display: -webkit-box;
   display: -ms-flexbox;

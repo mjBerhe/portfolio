@@ -46,7 +46,8 @@ export default function ContactPage() {
    return (
       <div className='container' ref={myRef}>
          <Head>
-            <title>Matthew Berhe</title>
+            <title>Contact Me</title>
+            <link rel="icon" type="image/png" href="logos/Berhe_Logo3.png" />
             <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
          </Head>
 

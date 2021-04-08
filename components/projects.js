@@ -84,7 +84,7 @@ export default function Projects() {
                </div>
                <div className='project-preview-container project2-preview-container'>
                   <img src="screenshots/2Slow_Screenshot.png" alt="project2-preview"/>
-                  <a href="https://osrsdps.com/" target="_blank" className='project-preview-overlay'>
+                  <a href="" target="_blank" className='project-preview-overlay'>
                      <h3 className='project2-preview-text'>Click Me Please</h3>
                   </a>
                </div>

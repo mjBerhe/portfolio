@@ -48,8 +48,9 @@ export default function Dps() {
    return (
       <div className='container' ref={myRef}>
          <Head>
-            <title>Matthew Berhe</title>
+            <title>DPS Calculator</title>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+            <link rel="icon" type="image/png" href="logos/Berhe_Logo3.png" />
          </Head>
 
          <div className='dps-content-container'>
@@ -97,7 +98,7 @@ export default function Dps() {
                </div>
                <p>
                   <strong>DPS Calculator</strong> is a web-based visual tool meant to help users
-                  make useful calculations for the popular online video game <i>Oldschool Runescape</i>.
+                  make useful calculations for the popular online video game <a href='https://oldschool.runescape.com/' target='_blank'>Oldschool Runescape</a>.
                   Damage per second, or DPS, is an essential metric players optimize to progress as
                   quickly as possible. Since the game’s engine doesn’t provide this metric, speculation
                   and confusion arises between players on which items/setups are better in different situations. 
@@ -146,15 +147,23 @@ export default function Dps() {
                </div>
                <p>
                   Differentiating between local and global state was a main issue throughout the project.
-                  The useState hook proved to be very powerful and intuitive when working on a local component,
+                  The <a href='https://reactjs.org/docs/hooks-state.html' target='_blank'>useState</a>
+                  hook proved to be very powerful and intuitive when working on a local component,
                   however it became more tedious whenever I needed to transfer information between components.
-                  The library Zustand was a perfect fix providing a global state store to use between all components.
+                  The library <a href='https://github.com/pmndrs/zustand' target='_blank'>Zustand</a>
+                  was a perfect fix providing a global state store to use between all components.
                </p>
                <p>
-                  I used MongoDB as a database to store every item in the game. My plan was to query the database when the web page loaded so that all items would be available. This led to a big problem where the initial loading time would be too long. This is when I transferred to Next.js as they provided a way to pre-render the whole page along with the database queries which reduced loading time significantly.
+                  I used <a href='https://www.mongodb.com/' target='_blank'>MongoDB</a> as a database to store every item in the game. My plan was to query the
+                  database when the web page loaded so that all items would be available. This led to
+                  a big problem where the initial loading time would be too long. This is when I
+                  transferred to <a href='https://nextjs.org/' target='_blank'>Next.js</a> as they provided a way to pre-render the whole page along
+                  with the database queries which reduced loading time significantly.
                </p>
                <p>
-                  Working on this project made me very comfortable working with React.js + Next.js for any of my front end needs. I also learned how useful a backend database tool such as MongoDB can be for future projects.
+                  Working on this project made me very comfortable working with React.js + Next.js
+                  for any of my front end needs. I also learned how useful a backend database tool
+                  such as MongoDB can be for future projects.
                </p>
             </div>
 
