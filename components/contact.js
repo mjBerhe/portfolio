@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Footer from './footer';
+import emailjs from 'emailjs-com';
 
 export default function Contact() {
 
@@ -11,7 +12,7 @@ export default function Contact() {
             console.log(result.text);
          }, (error) => {
             console.log(error.text);
-         });
+      });
    }
 
    return (

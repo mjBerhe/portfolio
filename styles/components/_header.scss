@@ -72,3 +72,40 @@
    }
 }
 
+.subtitle-section {
+   display: flex;
+   align-items: center;
+
+   // border: 1px solid white;
+}
+
+.header-logo {
+   width: 1.5rem;
+   margin-left: 1rem;
+   position: relative;
+   img {
+      width: 100%;
+   }
+
+   // border: 1px solid white;
+}
+
+.header-logo-overlay {
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   opacity: 0;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   transition: opacity ease-out .5s;
+}
+
+.header-logo-overlay:hover {
+   opacity: 1;
+}
+

@@ -65,7 +65,7 @@ export default function TooSlow() {
                <div className='page-title-links'>
                   <div className='footer-logo'>
                      <img src="logos/Link3_Logo.png" alt="link logo"/>
-                     <a href="" className='footer-logo-overlay' target='blank'>
+                     <a href="https://www.youtube.com/watch?v=wpV-gGA4PSk" className='footer-logo-overlay' target='_blank'>
                         <img src="logos/Link3_Logo2.png" alt="link logo blue"/>
                      </a>
                   </div>

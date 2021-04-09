@@ -62,7 +62,7 @@ export default function Portfolio() {
                <div className='page-title-links'>
                   <div className='footer-logo'>
                      <img src="logos/Link3_Logo.png" alt="link logo"/>
-                     <a href="https://portfolio-hymc202xo-berhe.vercel.app/" className='footer-logo-overlay' target='blank'>
+                     <a href="https://www.matthewberhe.com" className='footer-logo-overlay' target='blank'>
                         <img src="logos/Link3_Logo2.png" alt="link logo blue"/>
                      </a>
                   </div>

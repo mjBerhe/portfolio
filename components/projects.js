@@ -13,7 +13,9 @@ export default function Projects() {
                <div className='project-info-container project1-info-container'>
                   <div className='project-title project1-title'>
                      <Link href='/dps'>
-                        <a><h3>DPS Calculator</h3></a>
+                        <a target='blank'>
+                           <h3>DPS Calculator</h3>
+                        </a>
                      </Link>
                   </div>
                   <div className='project1-subtitle'>
@@ -42,9 +44,11 @@ export default function Projects() {
                </div>
                <div className='project-preview-container project1-preview-container'>
                   <img src="screenshots/DPS_Calc.png" alt="project1-preview"/>
-                  <a href="https://osrsdps.com/" target="_blank" className='project-preview-overlay'>
-                     <h3 className='project1-preview-text'>Check Me Out!</h3>
-                  </a>
+                  <Link href='/dps'>
+                     <a target="_blank" className='project-preview-overlay'>
+                        <h3 className='project1-preview-text'>Check Me Out!</h3>
+                     </a>
+                  </Link>
                </div>
             </section>
 
@@ -52,7 +56,7 @@ export default function Projects() {
                <div className='project-info-container project2-info-container'>
                   <div className='project-title project2-title'>
                      <Link href='/2slow'>
-                        <a>
+                        <a target='blank'>
                            <h3>2Slow</h3>
                            <h5>BETA</h5>
                         </a>
@@ -84,9 +88,11 @@ export default function Projects() {
                </div>
                <div className='project-preview-container project2-preview-container'>
                   <img src="screenshots/2Slow_Screenshot.png" alt="project2-preview"/>
-                  <a href="" target="_blank" className='project-preview-overlay'>
-                     <h3 className='project2-preview-text'>Click Me Please</h3>
-                  </a>
+                  <Link href='/2slow'>
+                     <a target="_blank" className='project-preview-overlay'>
+                        <h3 className='project2-preview-text'>Click Me Please</h3>
+                     </a>
+                  </Link>
                </div>
             </section>
 
@@ -94,7 +100,9 @@ export default function Projects() {
                <div className='project-info-container project3-info-container'>
                   <div className='project-title project3-title'>
                      <Link href='/portfolio'>
-                        <a><h3>Portfolio</h3></a>
+                        <a target='blank'>
+                           <h3>Portfolio</h3>
+                        </a>
                      </Link>
                   </div>
                   <div className='project3-subtitle'>
@@ -123,9 +131,11 @@ export default function Projects() {
                </div>
                <div className='project-preview-container project3-preview-container'>
                   <img src="screenshots/Portfolio_1.png" alt="project3-preview"/>
-                  <a href="https://portfolio-hymc202xo-berhe.vercel.app/" target="_blank" className='project-preview-overlay'>
-                     <h3 className='project3-preview-text'>This Looks Familiar</h3>
-                  </a>
+                  <Link href='/portfolio'>
+                     <a target="_blank" className='project-preview-overlay'>
+                        <h3 className='project3-preview-text'>This Looks Familiar</h3>
+                     </a>
+                  </Link>
                </div>
             </section>
          </div>

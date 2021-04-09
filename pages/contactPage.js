@@ -4,6 +4,7 @@ import Nav from '../components/nav';
 import Footer from '../components/footer';
 
 import FOG from 'vanta/dist/vanta.fog.min';
+import emailjs from 'emailjs-com';
 
 export default function ContactPage() {
 

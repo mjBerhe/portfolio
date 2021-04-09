@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import Link from 'next/link';
 
 export default function Header() {
 
@@ -22,7 +23,17 @@ export default function Header() {
                   <h1>h</h1>
                   <h1>e</h1>
                </div>
-               <h3>WEB DEVELOPER</h3>
+               <div className='subtitle-section'>
+                  <h3>WEB DEVELOPER</h3>
+                  <div className='header-logo'>
+                     <img src="logos/Mail_Logo.png" alt="mail logo"/>
+                     <Link href='/contactPage'>
+                        <a className='header-logo-overlay' target='blank'>
+                           <img src="logos/Mail_Logo2.png" alt="mail logo blue"/>
+                        </a>
+                     </Link>
+                  </div>
+               </div>
             </div>
          </div>
       </section>
