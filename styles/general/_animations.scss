@@ -1,5 +1,9 @@
 @mixin BounceUp() {
-   animation: Bounce 1s ease-out 1 ;
+   animation: Bounce 1s ease-out 1;
+}
+
+@mixin BounceInfinite() {
+   animation: BounceRepeat .75s ease-in-out infinite;
 }
 
 @keyframes Bounce {
@@ -14,6 +18,18 @@
    }
    60% {
       transform: translateY(-5px);
+   }
+}
+
+@keyframes BounceRepeat {
+   0% {
+      transform: translateY(0);
+   }
+   50% {
+      transform: translateY(-20px);
+   }
+   100% {
+      transform: translateY(0);
    }
 }
 

@@ -4,7 +4,7 @@ import Link from 'next/link';
 export default function Header() {
 
    return (
-      <section className='section section-1'>
+      <section className='section section-1 section1'>
          <div className='header-container'>
             <div className='header-title'>
                <div className='title-name'>
@@ -33,6 +33,9 @@ export default function Header() {
                         </a>
                      </Link>
                   </div>
+               </div>
+               <div className='arrow-container'>
+                  <img src="misc/DownArrow.png" alt=""/>
                </div>
             </div>
          </div>

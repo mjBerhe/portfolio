@@ -67,7 +67,7 @@ export default function Intro() {
    }
 
    return (
-      <section className='section section-2'>
+      <section className='section section-2' data-anchor='section2' id='section2'>
          <div className='intro-container'>
 
             <div className='about-me'>
