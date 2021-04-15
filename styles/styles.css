@@ -55,10 +55,14 @@ a, a:hover, a:active, a:focus {
   40% {
     -webkit-transform: translateY(-15px);
             transform: translateY(-15px);
+    color: rgba(102, 189, 211, 0.932);
   }
   60% {
     -webkit-transform: translateY(-5px);
             transform: translateY(-5px);
+  }
+  100% {
+    color: white;
   }
 }
 
@@ -74,10 +78,14 @@ a, a:hover, a:active, a:focus {
   40% {
     -webkit-transform: translateY(-15px);
             transform: translateY(-15px);
+    color: rgba(102, 189, 211, 0.932);
   }
   60% {
     -webkit-transform: translateY(-5px);
             transform: translateY(-5px);
+  }
+  100% {
+    color: white;
   }
 }
 
@@ -172,6 +180,7 @@ a, a:hover, a:active, a:focus {
 
 .page-title-links {
   height: 100%;
+  padding-left: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -188,7 +197,7 @@ a, a:hover, a:active, a:focus {
 }
 
 .page-title-links div {
-  width: 2rem;
+  width: 2.5rem;
   margin-left: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -198,20 +207,43 @@ a, a:hover, a:active, a:focus {
           align-items: center;
 }
 
-@media (max-width: 35rem) {
+.page-button {
+  height: 2.5rem;
+  width: 8rem;
+  background: transparent;
+  outline: none;
+  border: 2px solid rgba(102, 189, 211, 0.932);
+  border-radius: 2rem;
+}
+
+.page-button a {
+  color: white;
+  font-size: 1rem;
+}
+
+.page-button:hover {
+  background-color: rgba(102, 189, 211, 0.932);
+  -webkit-transition: background-color .7s;
+  transition: background-color .7s;
+}
+
+@media (max-width: 40rem) {
   .page-title h2 {
-    font-size: 3.25rem;
+    font-size: 3rem;
   }
   .page-title-links {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
   }
 }
 
@@ -562,24 +594,98 @@ a, a:hover, a:active, a:focus {
   }
 }
 
-.title-name {
+@media (max-width: 30rem) {
+  .header-title {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.preload-title-name {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.title-name h1:hover {
-  color: rgba(102, 189, 211, 0.932);
-  -webkit-animation: Bounce 1s ease-out 1;
-          animation: Bounce 1s ease-out 1;
+.preload-title-name h1:nth-child(0) {
+  -webkit-animation: Bounce 1s ease-out none 0s 1;
+          animation: Bounce 1s ease-out none 0s 1;
 }
 
-.title-b h1 {
-  color: rgba(102, 189, 211, 0.932);
+.preload-title-name h1:nth-child(1) {
+  -webkit-animation: Bounce 1s ease-out none 0.125s 1;
+          animation: Bounce 1s ease-out none 0.125s 1;
 }
 
-.title-b h1:hover {
-  color: white;
+.preload-title-name h1:nth-child(2) {
+  -webkit-animation: Bounce 1s ease-out none 0.25s 1;
+          animation: Bounce 1s ease-out none 0.25s 1;
+}
+
+.preload-title-name h1:nth-child(3) {
+  -webkit-animation: Bounce 1s ease-out none 0.375s 1;
+          animation: Bounce 1s ease-out none 0.375s 1;
+}
+
+.preload-title-name h1:nth-child(4) {
+  -webkit-animation: Bounce 1s ease-out none 0.5s 1;
+          animation: Bounce 1s ease-out none 0.5s 1;
+}
+
+.preload-title-name h1:nth-child(5) {
+  -webkit-animation: Bounce 1s ease-out none 0.625s 1;
+          animation: Bounce 1s ease-out none 0.625s 1;
+}
+
+.preload-title-name h1:nth-child(6) {
+  -webkit-animation: Bounce 1s ease-out none 0.75s 1;
+          animation: Bounce 1s ease-out none 0.75s 1;
+}
+
+.preload-title-name h1:nth-child(7) {
+  -webkit-animation: Bounce 1s ease-out none 0.875s 1;
+          animation: Bounce 1s ease-out none 0.875s 1;
+}
+
+.preload-title-name h1:nth-child(8) {
+  -webkit-animation: Bounce 1s ease-out none 1s 1;
+          animation: Bounce 1s ease-out none 1s 1;
+}
+
+.preload-title-name h1:nth-child(9) {
+  -webkit-animation: Bounce 1s ease-out none 1.125s 1;
+          animation: Bounce 1s ease-out none 1.125s 1;
+}
+
+.preload-title-name h1:nth-child(10) {
+  -webkit-animation: Bounce 1s ease-out none 1.25s 1;
+          animation: Bounce 1s ease-out none 1.25s 1;
+}
+
+.preload-title-name h1:nth-child(11) {
+  -webkit-animation: Bounce 1s ease-out none 1.375s 1;
+          animation: Bounce 1s ease-out none 1.375s 1;
+}
+
+.preload-title-name h1:nth-child(12) {
+  -webkit-animation: Bounce 1s ease-out none 1.5s 1;
+          animation: Bounce 1s ease-out none 1.5s 1;
+}
+
+.preload-title-name h1:nth-child(13) {
+  -webkit-animation: Bounce 1s ease-out none 1.625s 1;
+          animation: Bounce 1s ease-out none 1.625s 1;
+}
+
+.postload-title-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.postload-title-name h1:hover {
+  color: rgba(102, 189, 211, 0.932);
   -webkit-animation: Bounce 1s ease-out 1;
           animation: Bounce 1s ease-out 1;
 }
@@ -642,6 +748,7 @@ a, a:hover, a:active, a:focus {
 
 .arrow-container img {
   width: 1.25rem;
+  height: 2rem;
 }
 
 .section-2 {
@@ -901,10 +1008,6 @@ a, a:hover, a:active, a:focus {
   font-weight: bold;
 }
 
-.project-title:hover h3 {
-  color: rgba(102, 189, 211, 0.932);
-}
-
 .project-title::after {
   content: '';
   position: absolute;
@@ -912,7 +1015,7 @@ a, a:hover, a:active, a:focus {
   bottom: 0;
   width: 100%;
   height: 2px;
-  background: white;
+  background: rgba(102, 189, 211, 0.932);
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
   -webkit-transform-origin: right;
@@ -1887,6 +1990,10 @@ a, a:hover, a:active, a:focus {
   margin: 0;
   padding: 0;
   font-family: 'PT Sans', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 img {

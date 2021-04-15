@@ -22,6 +22,10 @@
    font-family: 'PT Sans', sans-serif;
 }
 
+html {
+   scroll-behavior: smooth;
+}
+
 img {
    display: block;
    max-width: 100%;

@@ -20,6 +20,7 @@
 
 .page-title-links {
    height: 100%;
+   padding-left: 1rem;
 
    display: flex;
    justify-content: space-between;
@@ -30,24 +31,44 @@
       outline: none;
    }
    div {
-      width: 2rem;
+      width: 2.5rem;
       margin-left: 2rem;
       display: flex;
       align-items: center;
    }
 }
 
-// When width < 35rem
-@media (max-width: 35rem) {
+.page-button {
+   height: 2.5rem;
+   width: 8rem;
+
+   background: transparent;
+   outline: none;
+   border: 2px solid $secondary-color;
+   border-radius: 2rem;
+   a {
+      color: white;
+      font-size: 1rem;
+   }
+}
+
+.page-button:hover {
+   background-color: $secondary-color;
+   transition: background-color .7s;
+}
+
+// When width < 40rem
+@media (max-width: 40rem) {
    .page-title {
       h2 {
-         font-size: 3.25rem;
+         font-size: 3rem;
       }
    }
    .page-title-links {
       display: flex;
-      flex-direction: column;
+      flex-direction: column-reverse;
       justify-content: space-around;
+      align-items: flex-end;
    }
 }
 

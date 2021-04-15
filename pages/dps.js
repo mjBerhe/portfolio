@@ -60,12 +60,17 @@ export default function Dps() {
             <div className='page-title dps-title'>
                <h2>DPS Calculator</h2>
                <div className='page-title-links'>
-                  <div className='footer-logo'>
+                  <button className='page-button'>
+                     <a href="https://osrsdps.com/" target='_blank'>
+                        Visit Website
+                     </a>
+                  </button>
+                  {/* <div className='footer-logo'>
                      <img src="logos/Link3_Logo.png" alt="link logo"/>
                      <a href="https://osrsdps.com/" className='footer-logo-overlay' target='blank'>
                         <img src="logos/Link3_Logo2.png" alt="link logo blue"/>
                      </a>
-                  </div>
+                  </div> */}
                   <div className='footer-logo'>
                      <img src="logos/Github_Logo.png" alt="github logo"/>
                      <a href="https://github.com/mjBerhe/dps-calc" className='footer-logo-overlay' target='blank'>

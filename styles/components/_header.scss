@@ -55,23 +55,35 @@
    }
 }
 
-.title-name {
-   display: flex;
-   h1:hover {
-      color: $secondary-color;
-      @include BounceUp();
+// When width < 30rem
+@media (max-width: 30rem) {
+   .header-title {
+      align-items: center;
    }
 }
 
-.title-b {
-   h1 {
-      color: $secondary-color;
-   }
-   h1:hover {
-      color: white;
-      @include BounceUp();
+.preload-title-name {
+   display: flex;
+   @for $i from 0 through 13 {
+      h1:nth-child(#{$i}) {
+         @include BounceUpDelay(#{$i/8}s);
+      }
    }
 }
+
+.postload-title-name {
+   display: flex;
+   h1:hover {
+      color: $secondary-color;
+      @include BounceUpDefault();
+   }
+}
+
+// .title-letter:hover {
+//    color: $secondary-color;
+//    @include BounceUp(0s);
+// }
+
 
 .subtitle-section {
    display: flex;
@@ -121,6 +133,7 @@
    // border: 1px solid white;
    img {
       width: 1.25rem;
+      height: 2rem;
    }
 }
 

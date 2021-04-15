@@ -1,4 +1,8 @@
-@mixin BounceUp() {
+@mixin BounceUpDelay($delayTime) {
+   animation: Bounce 1s ease-out none $delayTime 1;
+}
+
+@mixin BounceUpDefault() {
    animation: Bounce 1s ease-out 1;
 }
 
@@ -15,9 +19,13 @@
    }
    40% {
       transform: translateY(-15px);
+      color: $secondary-color;
    }
    60% {
       transform: translateY(-5px);
+   }
+   100% {
+      color: white;
    }
 }
 

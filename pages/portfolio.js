@@ -60,12 +60,17 @@ export default function Portfolio() {
             <div className='page-title portfolio-title'>
                <h2>Portfolio</h2>
                <div className='page-title-links'>
-                  <div className='footer-logo'>
+                  <button className='page-button'>
+                     <a href="https://www.matthewberhe.com" target='_blank'>
+                        Visit Website
+                     </a>
+                  </button>
+                  {/* <div className='footer-logo'>
                      <img src="logos/Link3_Logo.png" alt="link logo"/>
                      <a href="https://www.matthewberhe.com" className='footer-logo-overlay' target='blank'>
                         <img src="logos/Link3_Logo2.png" alt="link logo blue"/>
                      </a>
-                  </div>
+                  </div> */}
                   <div className='footer-logo'>
                      <img src="logos/Github_Logo.png" alt="github logo"/>
                      <a href="https://github.com/mjBerhe/portfolio" className='footer-logo-overlay' target='blank'>

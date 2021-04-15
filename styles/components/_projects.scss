@@ -59,11 +59,11 @@
    }
 }
 
-.project-title:hover {
-   h3 {
-      color: $secondary-color;
-   }
-}
+// .project-title:hover {
+//    h3 {
+//       color: $secondary-color;
+//    }
+// }
 
 .project-title::after {
    content: '';
@@ -72,7 +72,8 @@
    bottom: 0;
    width: 100%;
    height: 2px;
-   background: white;
+   // background: white;
+   background: $secondary-color;
 
    transform: scaleX(0);
    transform-origin: right;

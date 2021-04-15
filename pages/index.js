@@ -47,7 +47,7 @@ export default function Homepage() {
          <ReactFullpage
             scrollOverflow={true}
             scrollOverflowOptions={true}
-            scrollBar={false}
+            anchors={['section0', 'section1', 'section2', 'section3', 'section4']}
             render={() => (
                <ReactFullpage.Wrapper>
                   <div className='homepage-container' ref={myRef}>

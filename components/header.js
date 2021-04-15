@@ -3,11 +3,19 @@ import Link from 'next/link';
 
 export default function Header() {
 
+   const [titleClass, setTitleClass] = useState('preload-title-name');
+
+   useEffect(() => {
+      setTimeout(() => {
+         setTitleClass('postload-title-name');
+      }, 3000);
+   }, [])
+
    return (
-      <section className='section section-1 section1'>
+      <section className='section section-1' id='section0'>
          <div className='header-container'>
             <div className='header-title'>
-               <div className='title-name'>
+               <div className={titleClass}>
                   <h1>M</h1>
                   <h1>a</h1>
                   <h1>t</h1>
@@ -16,7 +24,6 @@ export default function Header() {
                   <h1>e</h1>
                   <h1>w</h1>
                   <h1>&nbsp;</h1>
-                  {/* <div className='title-b'><h1>B</h1></div> */}
                   <h1>B</h1>
                   <h1>e</h1>
                   <h1>r</h1>
@@ -35,7 +42,9 @@ export default function Header() {
                   </div>
                </div>
                <div className='arrow-container'>
-                  <img src="misc/DownArrow.png" alt=""/>
+                  <a href="#section1">
+                     <img src="misc/DownArrow.png" alt=""/>
+                  </a>
                </div>
             </div>
          </div>
