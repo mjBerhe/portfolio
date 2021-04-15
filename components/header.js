@@ -34,11 +34,9 @@ export default function Header() {
                   <h3>WEB DEVELOPER</h3>
                   <div className='header-logo'>
                      <img src="logos/Mail_Logo2.png" alt="mail logo"/>
-                     <Link href='/contactPage'>
-                        <a className='header-logo-overlay' target='blank'>
-                           <img src="logos/Mail_Logo.png" alt="mail logo blue"/>
-                        </a>
-                     </Link>
+                     <a href='#section3' className='header-logo-overlay'>
+                        <img src="logos/Mail_Logo.png" alt="mail logo blue"/>
+                     </a>
                   </div>
                </div>
                <div className='arrow-container'>
