@@ -1666,6 +1666,57 @@ a, a:hover, a:active, a:focus {
       grid-template-columns: minmax(22.5rem, 60rem);
 }
 
+.contact-title {
+  padding: 1.5rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-title img {
+  width: 2.5rem;
+}
+
+.contact-document-logo {
+  width: 2.5rem;
+  margin-left: 1rem;
+  position: relative;
+}
+
+.contact-document-logo img {
+  width: 100%;
+}
+
+.contact-document-logo-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: opacity ease-out .5s;
+  transition: opacity ease-out .5s;
+}
+
+.contact-document-logo-overlay:hover {
+  opacity: 1;
+}
+
 .contact-message {
   padding: 2rem;
   display: -webkit-box;

@@ -38,6 +38,12 @@ export default function Header() {
                         <img src="logos/Mail_Logo.png" alt="mail logo blue"/>
                      </a>
                   </div>
+                  <div className='header-logo'>
+                     <img src="/logos/Document_Logo2.png" alt="document pic2"/>
+                     <a href="Resume.pdf" className='header-logo-overlay' target='blank'>
+                        <img src="logos/Document_Logo.png" alt="document pic"/>
+                     </a>
+                  </div>
                </div>
                <div className='arrow-container'>
                   <a href="#section1">

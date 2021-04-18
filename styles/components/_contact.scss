@@ -35,10 +35,47 @@
    // border: solid 2px yellow;
 }
 
-// .contact-title {
-//    grid-row: 1/2;
-//    grid-column: 1/2;
-// }
+.contact-title {
+   padding: 1.5rem 1rem;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+   // border: 1px solid white;
+   img {
+      width: 2.5rem;
+   }
+}
+
+.contact-document-logo {
+   width: 2.5rem;
+   margin-left: 1rem;
+   position: relative;
+   img {
+      width: 100%;
+   }
+
+   // border: 1px solid white;
+}
+
+.contact-document-logo-overlay {
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   opacity: 0;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   transition: opacity ease-out .5s;
+}
+
+.contact-document-logo-overlay:hover {
+   opacity: 1;
+}
 
 .contact-message {
    // grid-row: 2/3;

@@ -44,8 +44,15 @@ export default function Contact() {
    return (
       <section className='section section-4'>
          <div className='contact-container'>
-            <div className='contact-title section-title'>
+            <div className='contact-title'>
                <h2>Contact Me</h2>
+               <div className='contact-document-logo'>
+                  <img src="/logos/Document_Logo.png" alt="document pic2"/>
+                  <a href="Resume.pdf" className='contact-document-logo-overlay' target='blank'>
+                     <img src="logos/Document_Logo2.png" alt="document pic"/>
+                  </a>
+               </div>
+               
             </div>
 
             <div className='contact-message'>
