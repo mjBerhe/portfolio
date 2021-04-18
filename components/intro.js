@@ -76,6 +76,10 @@ export default function Intro() {
                   websites & making complicated information more accessible. I appreciate products
                   that eliminate inconveniences.
                </h3>
+               {/* <h3>
+                  I am a self-taught developer from Toronto, Canada that loves to maximize efficiency, 
+                  build interactive websites, and play video games
+               </h3> */}
             </div>
 
             <div className='technolgies-container'>

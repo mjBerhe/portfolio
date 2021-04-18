@@ -17,6 +17,12 @@ export default function Footer({ className }) {
                   <img src="logos/LinkedIn_Logo2.png" alt="linkedin logo blue"/>
                </a>
             </div>
+            <div className='footer-logo'>
+               <img src="logos/Document_Logo_Circle.png" alt="resume logo"/>
+               <a href="Resume.pdf" className='footer-logo-overlay' target='blank'>
+                  <img src="logos/Document_Logo_Circle2.png" alt="resume logo blue"/>
+               </a>
+            </div>
          </div>
          <h4>Created by Matthew Berhe &copy; 2021</h4>
       </div>

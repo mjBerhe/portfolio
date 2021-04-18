@@ -699,9 +699,16 @@ a, a:hover, a:active, a:focus {
           align-items: center;
 }
 
+.header-logo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .header-logo {
+  padding-top: 1rem;
   width: 1.5rem;
-  margin-left: 1rem;
+  margin-right: 1rem;
   position: relative;
 }
 
