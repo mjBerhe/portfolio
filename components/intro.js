@@ -93,7 +93,7 @@ export default function Intro() {
                   {isFrontEnd.on && 
                      <div className='technology-front-items technology-items'>
                         <div className='technology-item'>
-                           <img src="logos/JS_Logo_White.png" alt="javascript logo white"/>
+                           <img src="logos/JS_Logo_W.png" alt="javascript logo white"/>
                            <a href="https://www.javascript.com/" className='technology-item-overlay' target='blank'>
                               <img src="logos/JS_Logo.png" alt=""/>
                            </a>
@@ -105,23 +105,27 @@ export default function Intro() {
                            </a>
                         </div>
                         <div className='technology-item'>
-                           <a href="https://www.w3.org/Style/CSS/Overview.en.html"  target='blank'>
-                              <img src="logos/CSS_Logo.png" alt=""/>
+                           <img src="logos/CSS_Logo_W.png" alt="css logo white"/>
+                           <a href="https://www.w3.org/Style/CSS/Overview.en.html" className='technology-item-overlay' target='blank'>
+                              <img src="logos/CSS_Logo.png" alt="css logo"/>
                            </a>
                         </div>
                         <div className='technology-item'>
-                           <a href="https://sass-lang.com/" target='blank'>
+                           <img src="logos/SASS_Logo_W.png" alt="sass logo white"/>
+                           <a href="https://sass-lang.com/" className='technology-item-overlay' target='blank'>
                               <img src="logos/SASS_Logo.png" alt=""/>
                            </a>
                         </div>
                         <div className='technology-item'>
-                           <a href="https://reactjs.org/" target='blank'>
-                              <img src="logos/ReactJS_Logo.png" alt=""/>
+                           <img src="logos/ReactJS_Logo_W.png" alt="react logo white"/>
+                           <a href="https://reactjs.org/" className='technology-item-overlay' target='blank'>
+                              <img src="logos/ReactJS_Logo.png" alt="react logo"/>
                            </a>                         
                         </div>
                         <div className='technology-item'>
-                           <a href="https://nextjs.org/" target='blank'>
-                              <img src="logos/NextJS_Logo.png" alt=""/>
+                           <img src="logos/NextJS_Logo_W.png" alt="nextjs logo white"/>
+                           <a href="https://nextjs.org/" className='technology-item-overlay' target='blank'>
+                              <img src="logos/NextJS_Logo_W.png" alt="nextjs logo"/>
                            </a>
                         </div>
                      </div>
@@ -129,18 +133,21 @@ export default function Intro() {
                   {isBackEnd.on &&
                      <div className='technology-back-items technology-items'>
                         <div className='technology-item'>
-                           <a href="https://nodejs.org/en/" target='blank'>
-                              <img src="logos/NodeJS_Logo.png" alt=""/>
+                           <img src="logos/NodeJS_Logo_W.png" alt="nodejs logo white"/>
+                           <a href="https://nodejs.org/en/" className='technology-item-overlay' target='blank'>
+                              <img src="logos/NodeJS_Logo.png" alt="nodejs logo"/>
                            </a>  
                         </div>
                         <div className='technology-item'>
-                           <a href="https://www.mongodb.com/" target='blank'>
-                              <img src="logos/MongoDB_Logo2.png" alt=""/>
+                           <img src="logos/MongoDB_Logo_W.png" alt="mongodb logo white"/>
+                           <a href="https://www.mongodb.com/" className='technology-item-overlay' target='blank'>
+                              <img src="logos/MongoDB_Logo.png" alt="mongodb logo"/>
                            </a>
                         </div>
                         <div className='technology-item'>
-                           <a href="https://socket.io/" target='blank'>
-                              <img src="logos/SocketIO_Logo.png" alt=""/>
+                           <img src="logos/SocketIO_Logo_W.png" alt="socketIO logo white"/>
+                           <a href="https://socket.io/" className='technology-item-overlay' target='blank'>
+                              <img src="logos/SocketIO_Logo_W.png" alt="socketIO logo"/>
                            </a>    
                         </div>
                      </div>
@@ -148,18 +155,21 @@ export default function Intro() {
                   {isDeployment.on &&
                      <div className='technology-deployment-items technology-items'>
                         <div className='technology-item'>
-                           <a href="https://www.heroku.com/" target='blank'>
-                              <img src="logos/Heroku_Logo.png" alt=""/>
+                           <img src="logos/Heroku_Logo2_W.png" alt="heroku logo white"/>
+                           <a href="https://www.heroku.com/" className='technology-item-overlay' target='blank'>
+                              <img src="logos/Heroku_Logo2.png" alt="heroku logo"/>
                            </a>      
                         </div>
                         <div className='technology-item'>
-                           <a href="https://github.com/" target='blank'>
-                              <img src="logos/Github_Logo.png" alt=""/>
+                           <img src="logos/Github_Logo_W.png" alt="github logo"/>
+                           <a href="https://github.com/" className='technology-item-overlay' target='blank'>
+                              <img src="logos/Github_Logo_W.png" alt=""/>
                            </a>
                         </div>
                         <div className='technology-item'>
-                           <a href="https://vercel.com/" target='blank'>
-                              <img src="logos/Vercel_Logo.png" alt=""/>
+                           <img src="logos/Vercel_Logo_W.png" alt="vercel logo white"/>
+                           <a href="https://vercel.com/" className='technology-item-overlay' target='blank'>
+                              <img src="logos/Vercel_Logo_W.png" alt="vercel logo"/>
                            </a>                           
                         </div>
                      </div>

@@ -922,12 +922,12 @@ a, a:hover, a:active, a:focus {
 }
 
 .technology-front-items, .technology-back-items, .technology-deployment-items {
-  padding-top: 3rem;
+  padding-top: .5rem;
 }
 
 .technology-item {
   width: 7rem;
-  height: 5rem;
+  height: 8rem;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -942,16 +942,22 @@ a, a:hover, a:active, a:focus {
 
 .technology-item img {
   height: 4rem;
+  -webkit-transition: all 100ms ease-in;
+  transition: all 100ms ease-in;
 }
 
 .technology-item:hover > img {
   opacity: 0;
+  -webkit-transition: all 100ms ease-in;
+  transition: all 100ms ease-in;
 }
 
 .technology-item:hover a > img {
   opacity: 1;
   -webkit-transform: scale(1.25);
           transform: scale(1.25);
+  -webkit-transition: all 100ms ease-in;
+  transition: all 100ms ease-in;
 }
 
 .technology-item-overlay {
@@ -973,8 +979,8 @@ a, a:hover, a:active, a:focus {
 
 .technology-item-overlay img {
   opacity: 0;
-  -webkit-transition: all 75ms ease-in;
-  transition: all 75ms ease-in;
+  -webkit-transition: all 100ms ease-in;
+  transition: all 100ms ease-in;
 }
 
 .section-3 {

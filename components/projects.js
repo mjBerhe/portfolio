@@ -35,7 +35,7 @@ export default function Projects() {
                         <h4>MongoDB</h4>
                      </a>
                      <div className='footer-logo'>
-                        <img src="logos/Github_Logo.png" alt="github logo"/>
+                        <img src="logos/Github_Logo_W.png" alt="github logo"/>
                         <a href="https://github.com/mjBerhe/dps-calc" className='footer-logo-overlay' target='blank'>
                            <img src="logos/Github_Logo2.png" alt="github logo blue"/>
                         </a>
@@ -70,7 +70,7 @@ export default function Projects() {
                   </div>
                   <div className='project-tools project2-tools'>
                      <div className='footer-logo'>
-                        <img src="logos/Github_Logo.png" alt="github logo"/>
+                        <img src="logos/Github_Logo_W.png" alt="github logo"/>
                         <a href="https://github.com/mjBerhe/2S" className='footer-logo-overlay' target='blank'>
                            <img src="logos/Github_Logo2.png" alt="github logo blue"/>
                         </a>
@@ -122,7 +122,7 @@ export default function Projects() {
                         <h4>SASS</h4>
                      </a>
                      <div className='footer-logo'>
-                        <img src="logos/Github_Logo.png" alt="github logo"/>
+                        <img src="logos/Github_Logo_W.png" alt="github logo"/>
                         <a href="https://github.com/mjBerhe/portfolio" className='footer-logo-overlay' target='blank'>
                            <img src="logos/Github_Logo2.png" alt="github logo blue"/>
                         </a>

@@ -72,7 +72,7 @@ export default function Dps() {
                      </a>
                   </div> */}
                   <div className='footer-logo'>
-                     <img src="logos/Github_Logo.png" alt="github logo"/>
+                     <img src="logos/Github_Logo_W.png" alt="github logo"/>
                      <a href="https://github.com/mjBerhe/dps-calc" className='footer-logo-overlay' target='blank'>
                         <img src="logos/Github_Logo2.png" alt="github logo blue"/>
                      </a>
@@ -119,28 +119,33 @@ export default function Dps() {
             <div className='dps-info-2'>
                <div className='technology-items'>
                   <div className='technology-item'>
-                     <a href="https://reactjs.org/" target='blank'>
-                        <img src="logos/ReactJS_Logo.png" alt=""/>
+                     <img src="logos/ReactJS_Logo_W.png" alt="react logo white"/>
+                     <a href="https://reactjs.org/" className='technology-item-overlay' target='blank'>
+                        <img src="logos/ReactJS_Logo.png" alt="react logo"/>
                      </a>                         
                   </div>
                   <div className='technology-item'>
-                     <a href="https://nextjs.org/" target='blank'>
-                        <img src="logos/NextJS_Logo.png" alt=""/>
+                     <img src="logos/NextJS_Logo_W.png" alt="nextjs logo white"/>
+                     <a href="https://nextjs.org/" className='technology-item-overlay' target='blank'>
+                        <img src="logos/NextJS_Logo_W.png" alt="nextjs logo"/>
                      </a>
                   </div>
                   <div className='technology-item'>
-                     <a href="https://sass-lang.com/" target='blank'>
+                     <img src="logos/SASS_Logo_W.png" alt="sass logo white"/>
+                     <a href="https://sass-lang.com/" className='technology-item-overlay' target='blank'>
                         <img src="logos/SASS_Logo.png" alt=""/>
                      </a>
                   </div>
                   <div className='technology-item'>
-                     <a href="https://www.mongodb.com/" target='blank'>
-                        <img src="logos/MongoDB_Logo2.png" alt=""/>
+                     <img src="logos/MongoDB_Logo_W.png" alt="mongodb logo white"/>
+                     <a href="https://www.mongodb.com/" className='technology-item-overlay' target='blank'>
+                        <img src="logos/MongoDB_Logo.png" alt="mongodb logo"/>
                      </a>
                   </div>
                   <div className='technology-item'>
-                     <a href="https://vercel.com/" target='blank'>
-                        <img src="logos/Vercel_Logo.png" alt=""/>
+                     <img src="logos/Vercel_Logo_W.png" alt="vercel logo white"/>
+                     <a href="https://vercel.com/" className='technology-item-overlay' target='blank'>
+                        <img src="logos/Vercel_Logo_W.png" alt="vercel logo"/>
                      </a>                           
                   </div>
                </div>

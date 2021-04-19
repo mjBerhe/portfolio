@@ -75,7 +75,7 @@ export default function TooSlow() {
                      </a>
                   </div> */}
                   <div className='footer-logo'>
-                     <img src="logos/Github_Logo.png" alt="github logo"/>
+                     <img src="logos/Github_Logo_W.png" alt="github logo"/>
                      <a href="https://github.com/mjBerhe/2S" className='footer-logo-overlay' target='blank'>
                         <img src="logos/Github_Logo2.png" alt="github logo blue"/>
                      </a>
@@ -116,34 +116,40 @@ export default function TooSlow() {
                {/* <h3><strong>//&nbsp;&nbsp;</strong>Technologies Used</h3> */}
                <div className='technology-items'>
                   <div className='technology-item'>
-                     <a href="https://nodejs.org/en/" target='blank'>
-                        <img src="logos/NodeJS_Logo.png" alt=""/>
+                     <img src="logos/NodeJS_Logo_W.png" alt="nodejs logo white"/>
+                     <a href="https://nodejs.org/en/" className='technology-item-overlay' target='blank'>
+                        <img src="logos/NodeJS_Logo.png" alt="nodejs logo"/>
                      </a>  
                   </div>
                   <div className='technology-item'>
-                     <a href="https://reactjs.org/" target='blank'>
-                        <img src="logos/ReactJS_Logo.png" alt=""/>
+                     <img src="logos/ReactJS_Logo_W.png" alt="react logo white"/>
+                     <a href="https://reactjs.org/" className='technology-item-overlay' target='blank'>
+                        <img src="logos/ReactJS_Logo.png" alt="react logo"/>
                      </a>                         
                   </div>
                   <div className='technology-item'>
-                     <a href="https://nextjs.org/" target='blank'>
-                        <img src="logos/NextJS_Logo.png" alt=""/>
+                     <img src="logos/NextJS_Logo_W.png" alt="nextjs logo white"/>
+                     <a href="https://nextjs.org/" className='technology-item-overlay' target='blank'>
+                        <img src="logos/NextJS_Logo_W.png" alt="nextjs logo"/>
                      </a>
                   </div>
                   <div className='technology-item'>
-                     <a href="https://sass-lang.com/" target='blank'>
+                     <img src="logos/SASS_Logo_W.png" alt="sass logo white"/>
+                     <a href="https://sass-lang.com/" className='technology-item-overlay' target='blank'>
                         <img src="logos/SASS_Logo.png" alt=""/>
                      </a>
                   </div>
                   <div className='technology-item'>
-                     <a href="https://socket.io/" target='blank'>
-                        <img src="logos/SocketIO_Logo.png" alt=""/>
-                     </a>
+                     <img src="logos/SocketIO_Logo_W.png" alt="socketIO logo white"/>
+                     <a href="https://socket.io/" className='technology-item-overlay' target='blank'>
+                        <img src="logos/SocketIO_Logo_W.png" alt="socketIO logo"/>
+                     </a>    
                   </div>
                   <div className='technology-item'>
-                     <a href="https://www.heroku.com/" target='blank'>
-                        <img src="logos/Heroku_Logo.png" alt=""/>
-                     </a>                           
+                     <img src="logos/Heroku_Logo2_W.png" alt="heroku logo white"/>
+                     <a href="https://www.heroku.com/" className='technology-item-overlay' target='blank'>
+                        <img src="logos/Heroku_Logo2.png" alt="heroku logo"/>
+                     </a>      
                   </div>
                </div>
             </div>
