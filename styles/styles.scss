@@ -51,6 +51,8 @@ img {
    display: grid;
    grid-template-rows: 100vh repeat(4, auto);
    grid-template-columns: minmax($min-width, 100vw);
+   
+   z-index: 1;
 }
 
 .section-title {

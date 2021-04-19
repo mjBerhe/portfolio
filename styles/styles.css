@@ -922,12 +922,12 @@ a, a:hover, a:active, a:focus {
 }
 
 .technology-front-items, .technology-back-items, .technology-deployment-items {
-  padding-top: 1.5rem;
+  padding-top: 3rem;
 }
 
 .technology-item {
-  width: 7.5rem;
-  height: 8rem;
+  width: 7rem;
+  height: 5rem;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -942,6 +942,16 @@ a, a:hover, a:active, a:focus {
 
 .technology-item img {
   height: 4rem;
+}
+
+.technology-item:hover > img {
+  opacity: 0;
+}
+
+.technology-item:hover a > img {
+  opacity: 1;
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
 }
 
 .technology-item-overlay {
@@ -962,16 +972,9 @@ a, a:hover, a:active, a:focus {
 }
 
 .technology-item-overlay img {
-  height: 4rem;
   opacity: 0;
-  -webkit-transition: all 100ms ease-in;
-  transition: all 100ms ease-in;
-}
-
-.technology-item-overlay > img:hover {
-  opacity: 1;
-  -webkit-transform: scale(1.25);
-          transform: scale(1.25);
+  -webkit-transition: all 75ms ease-in;
+  transition: all 75ms ease-in;
 }
 
 .section-3 {
@@ -2093,6 +2096,7 @@ img {
       grid-template-rows: 100vh repeat(4, auto);
   -ms-grid-columns: minmax(22.5rem, 100vw);
       grid-template-columns: minmax(22.5rem, 100vw);
+  z-index: 1;
 }
 
 .section-title {

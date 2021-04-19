@@ -93,23 +93,19 @@ export default function Intro() {
                   {isFrontEnd.on && 
                      <div className='technology-front-items technology-items'>
                         <div className='technology-item'>
-                           <img src="logos/JS_Logo.png" alt=""/>
+                           <img src="logos/JS_Logo_White.png" alt="javascript logo white"/>
                            <a href="https://www.javascript.com/" className='technology-item-overlay' target='blank'>
-                              <img src="logos/JS_Logo0.png" alt=""/>
-                           </a>
-                        </div>
-                        {/* <div className='technology-item'>
-                           <a href="https://www.javascript.com/" target='blank'>
                               <img src="logos/JS_Logo.png" alt=""/>
                            </a>
-                        </div> */}
+                        </div>
                         <div className='technology-item'>
-                           <a href="https://html.spec.whatwg.org/multipage/" target='blank'>
-                              <img src="logos/HTML_Logo.png" alt=""/>
+                           <img src="logos/HTML_Logo_W.png" alt="html logo white"/>
+                           <a href="https://html.spec.whatwg.org/multipage/" className='technology-item-overlay' target='blank'>
+                              <img src="logos/HTML_Logo.png" alt="html logo"/>
                            </a>
                         </div>
                         <div className='technology-item'>
-                           <a href="https://www.w3.org/Style/CSS/Overview.en.html" target='blank'>
+                           <a href="https://www.w3.org/Style/CSS/Overview.en.html"  target='blank'>
                               <img src="logos/CSS_Logo.png" alt=""/>
                            </a>
                         </div>
