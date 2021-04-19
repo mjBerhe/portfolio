@@ -71,15 +71,15 @@ export default function Intro() {
          <div className='intro-container'>
 
             <div className='about-me'>
-               <h3>
+               {/* <h3>
                   I am a self-taught developer from Toronto, Canada that enjoys creating interactive
                   websites & making complicated information more accessible. I appreciate products
                   that eliminate inconveniences.
-               </h3>
-               {/* <h3>
-                  I am a self-taught developer from Toronto, Canada that loves to maximize efficiency, 
-                  build interactive websites, and play video games
                </h3> */}
+               <h3>
+                  I am a self-taught developer from Toronto, Canada that enjoys building intuitive and
+                  interactive websites. I love efficiency, competition, and video games.
+               </h3>
             </div>
 
             <div className='technolgies-container'>
@@ -92,17 +92,17 @@ export default function Intro() {
                <div className='technology-items-container'>
                   {isFrontEnd.on && 
                      <div className='technology-front-items technology-items'>
-                        {/* <div className='technology-item'>
+                        <div className='technology-item'>
                            <img src="logos/JS_Logo.png" alt=""/>
                            <a href="https://www.javascript.com/" className='technology-item-overlay' target='blank'>
-                              <img src="logos/JS_Logo2.png" alt=""/>
+                              <img src="logos/JS_Logo0.png" alt=""/>
                            </a>
-                        </div> */}
-                        <div className='technology-item'>
+                        </div>
+                        {/* <div className='technology-item'>
                            <a href="https://www.javascript.com/" target='blank'>
                               <img src="logos/JS_Logo.png" alt=""/>
                            </a>
-                        </div>
+                        </div> */}
                         <div className='technology-item'>
                            <a href="https://html.spec.whatwg.org/multipage/" target='blank'>
                               <img src="logos/HTML_Logo.png" alt=""/>

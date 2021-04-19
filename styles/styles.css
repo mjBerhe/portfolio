@@ -706,7 +706,6 @@ a, a:hover, a:active, a:focus {
 }
 
 .header-logo {
-  padding-top: 1rem;
   width: 1.5rem;
   margin-right: 1rem;
   position: relative;
@@ -790,6 +789,10 @@ a, a:hover, a:active, a:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -939,21 +942,36 @@ a, a:hover, a:active, a:focus {
 
 .technology-item img {
   height: 4rem;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  -webkit-transition: -webkit-transform 150ms ease-in;
-  transition: -webkit-transform 150ms ease-in;
-  transition: transform 150ms ease-in;
-  transition: transform 150ms ease-in, -webkit-transform 150ms ease-in;
 }
 
-.technology-item img:hover {
+.technology-item-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.technology-item-overlay img {
+  height: 4rem;
+  opacity: 0;
+  -webkit-transition: all 100ms ease-in;
+  transition: all 100ms ease-in;
+}
+
+.technology-item-overlay > img:hover {
+  opacity: 1;
   -webkit-transform: scale(1.25);
           transform: scale(1.25);
-  -webkit-transition: -webkit-transform 150ms ease-in;
-  transition: -webkit-transform 150ms ease-in;
-  transition: transform 150ms ease-in;
-  transition: transform 150ms ease-in, -webkit-transform 150ms ease-in;
 }
 
 .section-3 {
