@@ -141,7 +141,7 @@ export default function Intro() {
                         <div className='technology-item'>
                            <img src="logos/MongoDB_Logo_W.png" alt="mongodb logo white"/>
                            <a href="https://www.mongodb.com/" className='technology-item-overlay' target='blank'>
-                              <img src="logos/MongoDB_Logo.png" alt="mongodb logo"/>
+                              <img src="logos/MongoDB_Logo_W.png" alt="mongodb logo"/>
                            </a>
                         </div>
                         <div className='technology-item'>
