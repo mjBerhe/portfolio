@@ -80,7 +80,8 @@ img {
 
 .nav {
    max-height: 5rem;
-   padding: 1rem .5rem;
+   // min-width: $min-width;
+   padding: 1rem 0rem;
    margin: 0 1rem;
 
    display: flex;

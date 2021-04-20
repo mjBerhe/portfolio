@@ -8,8 +8,8 @@ export default function Nav() {
                <img src="logos/Berhe_Logo2.png" alt=""/>
             </a>
          </Link>
-         <Link href='/contactPage'>
-            <a className='contact-link'>
+         <Link href='/#section3'>
+            <a className='contact-link' target='_blank'>
                <h4>Contact Me</h4>
             </a>
          </Link>

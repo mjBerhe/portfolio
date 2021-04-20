@@ -65,12 +65,6 @@ export default function Dps() {
                         Visit Website
                      </a>
                   </button>
-                  {/* <div className='footer-logo'>
-                     <img src="logos/Link3_Logo.png" alt="link logo"/>
-                     <a href="https://osrsdps.com/" className='footer-logo-overlay' target='blank'>
-                        <img src="logos/Link3_Logo2.png" alt="link logo blue"/>
-                     </a>
-                  </div> */}
                   <div className='footer-logo'>
                      <img src="logos/Github_Logo_W.png" alt="github logo"/>
                      <a href="https://github.com/mjBerhe/dps-calc" className='footer-logo-overlay' target='blank'>
